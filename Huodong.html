@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>河北科技大学2025年资格考试日历</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+    body{background: #f1f1f1;}
+    </style>
+</head>
+<body>
+        <div class="quote-fall-container" id="quoteContainer"></div>
+    <header>
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="./index.html" class="logo">
+                    <img src="./images/logo.png" alt="河北科技大学学习辅助平台">
+                </a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">首页 <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="index.html#competitions" class="dropdown-item"><i class="fas fa-trophy"></i> 竞赛等级</a>
+                            <a href="index.html#features" class="dropdown-item"><i class="fas fa-star"></i> 功能特色</a>
+                            <a href="index.html#quick-access" class="dropdown-item"><i class="fas fa-link"></i> 快速链接</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./DYC1.html" class="nav-link">竞赛 <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="A.html" class="dropdown-item"><i class="fas fa-trophy"></i> A级比赛</a>
+                            <a href="B.html" class="dropdown-item"><i class="fas fa-medal"></i> B级比赛</a>
+                            <a href="C.html" class="dropdown-item"><i class="fas fa-award"></i> C级比赛</a>
+                            <a href="D.html" class="dropdown-item"><i class="fas fa-certificate"></i> D级比赛</a>
+                            <a href="time.html" class="dropdown-item"><i class="fas fa-calendar-alt"></i> 比赛日历</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Huodong.html" class="nav-link active">事件 <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="Huodong.html" class="dropdown-item"><i class="fas fa-calendar-day"></i> 活动日历</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Kecheng.html" class="nav-link">课程</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./fankui.html" class="nav-link">反馈</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="header-banner">
+            <div class="banner-overlay"></div>
+            <div class="banner-content">
+                <h1>河北科技大学2025年资格考试日历</h1>
+                <p>一览全年重要资格考试安排，合理规划备考与报名时间，助力学业成长</p>
+            </div>
+        </div>
+    <!-- 主体内容 -->
+    <div class="container">
+        <!-- <div class="page-header exam-calendar-header text-center">
+            <h2>河北科技大学2025年资格考试日历</h2>
+            <p>一览全年重要资格考试安排，合理规划备考与报名时间，助力学业成长</p>
+        </div> -->
+
+        <div class="season-nav fade-in">
+            <button class="season-btn spring active" data-season="spring">
+                <i class="fas fa-seedling"></i> 春季 (3月-5月)
+            </button>
+            <button class="season-btn summer" data-season="summer">
+                <i class="fas fa-sun"></i> 夏季 (6月-8月)
+            </button>
+            <button class="season-btn autumn" data-season="autumn">
+                <i class="fas fa-leaf"></i> 秋季 (9月-11月)
+            </button>
+            <button class="season-btn winter" data-season="winter">
+                <i class="fas fa-snowflake"></i> 冬季 (12月-2月)
+            </button>
+        </div>
+
+        <!-- 搜索和筛选区域（优化交互） -->
+        <div class="search-controls fade-in">
+            <div class="search-box">
+                <input type="text" id="activity-search" placeholder="搜索考试名称（如：英语四六级、计算机等级）...">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="date-range">
+                <input type="date" id="start-date" placeholder="开始日期">
+                <span>至</span>
+                <input type="date" id="end-date" placeholder="结束日期">
+                <button id="highlight-range">高亮日期范围</button>
+            </div>
+            <div class="current-date">
+                <i class="fas fa-calendar-day"></i>
+                <span id="current-date-display">当前日期：</span>
+            </div>
+        </div>
+
+        <!-- 春季内容（增加背景图片，优化布局） -->
+        <div class="season-info active spring" id="spring-info">
+            <h2 class="season-title spring"><i class="fas fa-seedling"></i> 春季考试概览</h2>
+            <p class="season-desc">春季是各类资格考试报名和备考的关键期，包括教师资格证考试、计算机等级考试等重要资格认证，部分考试报名时间集中在3-4月，需提前准备相关材料。</p>
+            
+            <div class="highlights">
+                <div class="highlight-card spring">
+                    <div class="highlight-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="highlight-title">教师资格考试</div>
+                    <div class="highlight-desc">上半年笔试报名（3月）与考试（3月中旬），面试报名（4月）与考试（5月）</div>
+                </div>
+                <div class="highlight-card spring">
+                    <div class="highlight-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="highlight-title">计算机等级考试</div>
+                    <div class="highlight-desc">9月考试报名（3-4月），上半年备考黄金期，建议提前2-3个月准备</div>
+                </div>
+                <div class="highlight-card spring">
+                    <div class="highlight-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <div class="highlight-title">英语四六级</div>
+                    <div class="highlight-desc">6月考试报名（4月），口试报名（3月底），笔试备考冲刺阶段</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="season-info summer" id="summer-info">
+            <h2 class="season-title summer"><i class="fas fa-sun"></i> 夏季考试概览</h2>
+            <p class="season-desc">夏季是各类重要资格考试的集中期，英语四六级、计算机等级考试等陆续开考，同时开启下半年考试报名通道，需关注考试时间与成绩查询节点。</p>
+            
+            <div class="highlights">
+                <div class="highlight-card summer">
+                    <div class="highlight-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <div class="highlight-title">英语四六级</div>
+                    <div class="highlight-desc">6月笔试（6月初），口试（5月中旬），成绩查询（8月中下旬）</div>
+                </div>
+                <div class="highlight-card summer">
+                    <div class="highlight-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="highlight-title">计算机等级考试</div>
+                    <div class="highlight-desc">9月考试报名截止（7月底），考前强化备考期，重点突破实操题型</div>
+                </div>
+                <div class="highlight-card summer">
+                    <div class="highlight-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="highlight-title">教师资格考试</div>
+                    <div class="highlight-desc">下半年笔试报名（7月），上半年面试成绩查询（6月）</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 秋季内容（增加背景图片，优化布局） -->
+        <div class="season-info autumn" id="autumn-info">
+            <h2 class="season-title autumn"><i class="fas fa-leaf"></i> 秋季考试概览</h2>
+            <p class="season-desc">秋季是资格考试的高峰期，计算机等级考试、教师资格证考试、英语四六级等集中开考，报名与考试时间紧凑，需合理规划复习节奏。</p>
+            
+            <div class="highlights">
+                <div class="highlight-card autumn">
+                    <div class="highlight-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="highlight-title">计算机等级考试</div>
+                    <div class="highlight-desc">9月笔试（9月中旬），成绩查询（11月），2026年3月考试报名（10月）</div>
+                </div>
+                <div class="highlight-card autumn">
+                    <div class="highlight-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <div class="highlight-title">英语四六级</div>
+                    <div class="highlight-desc">12月考试报名（9月），口试报名（9月底），笔试备考启动</div>
+                </div>
+                <div class="highlight-card autumn">
+                    <div class="highlight-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="highlight-title">教师资格考试</div>
+                    <div class="highlight-desc">下半年笔试（10月底），面试报名（11月），笔试成绩查询（12月）</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="season-info winter" id="winter-info">
+            <h2 class="season-title winter"><i class="fas fa-snowflake"></i> 冬季考试概览</h2>
+            <p class="season-desc">冬季是年度最后一场大型资格考试的时期，英语四六级笔试收官，各类考试成绩集中发布，同时开启次年考试报名，为新一年备考做好规划。</p>
+            
+            <div class="highlights">
+                <div class="highlight-card winter">
+                    <div class="highlight-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <div class="highlight-title">英语四六级</div>
+                    <div class="highlight-desc">12月笔试（12月中旬），口试（11月下旬），成绩查询（次年2月）</div>
+                </div>
+                <div class="highlight-card winter">
+                    <div class="highlight-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="highlight-title">成绩发布</div>
+                    <div class="highlight-desc">教师资格证面试成绩（次年3月），计算机等级考试成绩（11月）</div>
+                </div>
+                <div class="highlight-card winter">
+                    <div class="highlight-icon">
+                        <i class="fas fa-calendar-plus"></i>
+                    </div>
+                    <div class="highlight-title">报名准备</div>
+                    <div class="highlight-desc">2026年上半年教师资格证报名（1月），计算机等级考试报名（12月）</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="calendar-grid" id="calendar-container">
+        </div>
+
+        <div class="event-panel" id="event-panel">
+            <div class="event-panel-header">
+                <div class="event-date" id="panel-date">2025年1月1日</div>
+                <button class="close-panel" id="close-panel">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <ul class="event-list" id="event-list">
+            </ul>
+        </div>
+        <div class="footer-info text-center">
+            <p>本日历基于各类资格考试官方时间表整理 | 具体安排以官方通知为准 | 建议定期关注学校教务处及考试中心公告</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>关于我们</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 学校简介</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 领导团队</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 组织机构</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 校园文化</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>招生信息</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 本科生招生</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 研究生招生</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 留学生招生</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 继续教育</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>校园生活</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 学生活动</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 社团组织</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 校园服务</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 后勤保障</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>联系我们</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> 河北省石家庄市裕华区裕翔街26号</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> 0311-88626666</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> jwc@hebust.edu.cn</a></li>
+                        <li><a href="#"><i class="fas fa-globe"></i> www.hebust.edu.cn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 河北科技大学 版权所有 | 冀ICP备XXXXXXXX号</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript 代码（延续原功能，优化交互体验） -->
+    <script>
+        // 导航栏滚动效果（复用现有逻辑）
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // 日历核心数据（保留原考试安排，补充细节）
+        const calendarData = {
+            // 春季 (3月-5月)
+            "2025-03": {
+                season: "spring",
+                events: {
+                    1: ["教师资格考试(笔试)报名开始", "上半年教师资格考试笔试报名通道开启，登录中小学教师资格考试网报名", "teacher"],
+                    5: ["计算机等级考试报名开始", "9月全国计算机等级考试（NCRE）报名启动，通过教育考试院官网报名", "computer"],
+                    15: ["教师资格考试(笔试)", "上半年教师资格考试笔试，具体考点以准考证为准", "teacher"],
+                    20: ["英语四级口试报名开始", "上半年英语四级口试报名启动，登录CET官网报名", "cet"],
+                    25: ["英语六级口试报名开始", "上半年英语六级口试报名启动，登录CET官网报名", "cet"]
+                }
+            },
+            "2025-04": {
+                season: "spring",
+                events: {
+                    1: ["英语四六级笔试报名开始", "上半年英语四六级笔试报名通道开启，学校统一组织报名", "cet"],
+                    10: ["计算机等级考试报名截止", "9月全国计算机等级考试报名截止，逾期不可补报", "computer"],
+                    15: ["教师资格考试(面试)报名开始", "上半年教师资格考试面试报名启动，需完成笔试成绩核验", "teacher"],
+                    20: ["英语口试准考证打印", "上半年英语四六级口试准考证打印开始，登录CET官网下载", "cet"]
+                }
+            },
+            "2025-05": {
+                season: "spring",
+                events: {
+                    10: ["英语四六级口试", "上半年英语四六级口试，口语测试形式为机考", "cet"],
+                    15: ["教师资格考试(面试)", "上半年教师资格考试面试，结构化+试讲+答辩形式", "teacher"],
+                    20: ["英语四六级笔试准考证打印", "上半年英语四六级笔试准考证打印开始，学校通知领取", "cet"],
+                    25: ["计算机等级考试备考期", "9月全国计算机等级考试备考关键期，建议完成真题模拟", "computer"]
+                }
+            },
+            // 夏季 (6月-8月)
+            "2025-06": {
+                season: "summer",
+                events: {
+                    1: ["英语四六级笔试", "上半年英语四六级笔试，上午四级、下午六级", "cet"],
+                    10: ["教师资格考试成绩发布", "上半年教师资格考试面试成绩发布，登录官网查询", "teacher"],
+                    15: ["计算机等级考试强化备考", "9月全国计算机等级考试强化备考期，重点突破薄弱环节", "computer"],
+                    25: ["英语四六级成绩查询", "上半年英语四六级成绩查询开始，登录CET官网查询", "cet"]
+                }
+            },
+            "2025-07": {
+                season: "summer",
+                events: {
+                    5: ["教师资格考试(笔试)报名开始", "下半年教师资格考试笔试报名通道开启", "teacher"],
+                    10: ["计算机等级考试最后冲刺", "9月全国计算机等级考试最后冲刺，全真模拟训练", "computer"],
+                    20: ["英语四六级下半年报名准备", "下半年英语四六级报名材料准备，关注学校通知", "cet"]
+                }
+            },
+            "2025-08": {
+                season: "summer",
+                events: {
+                    1: ["计算机等级考试准考证打印", "9月全国计算机等级考试准考证打印开始", "computer"],
+                    15: ["教师资格考试(笔试)报名截止", "下半年教师资格考试笔试报名截止", "teacher"],
+                    25: ["英语四六级下半年报名开始", "下半年英语四六级笔试报名通道开启", "cet"]
+                }
+            },
+            // 秋季 (9月-11月)
+            "2025-09": {
+                season: "autumn",
+                events: {
+                    5: ["计算机等级考试", "9月全国计算机等级考试，笔试+机考形式", "computer"],
+                    10: ["英语四六级下半年报名截止", "下半年英语四六级笔试报名截止", "cet"],
+                    15: ["教师资格考试(笔试)", "下半年教师资格考试笔试，考点分布在石家庄各高校", "teacher"],
+                    20: ["英语口试报名开始", "下半年英语四六级口试报名启动", "cet"],
+                    25: ["计算机等级考试成绩查询", "9月全国计算机等级考试成绩查询开始", "computer"]
+                }
+            },
+            "2025-10": {
+                season: "autumn",
+                events: {
+                    5: ["教师资格考试(面试)报名开始", "下半年教师资格考试面试报名启动", "teacher"],
+                    10: ["英语口试准考证打印", "下半年英语四六级口试准考证打印开始", "cet"],
+                    15: ["英语四六级口试", "下半年英语四六级口试，机考形式", "cet"],
+                    20: ["英语四六级笔试准考证打印", "下半年英语四六级笔试准考证打印开始", "cet"]
+                }
+            },
+            "2025-11": {
+                season: "autumn",
+                events: {
+                    5: ["教师资格考试(面试)", "下半年教师资格考试面试，结构化+试讲+答辩", "teacher"],
+                    10: ["计算机等级考试报名开始", "2026年3月全国计算机等级考试报名开始", "computer"],
+                    20: ["英语四六级最后冲刺", "下半年英语四六级考试最后冲刺，真题训练", "cet"]
+                }
+            },
+            // 冬季 (12月-2月)
+            "2025-12": {
+                season: "winter",
+                events: {
+                    5: ["英语四六级笔试", "下半年英语四六级笔试，上午四级、下午六级", "cet"],
+                    15: ["教师资格考试成绩发布", "下半年教师资格考试面试成绩发布", "teacher"],
+                    20: ["计算机等级考试报名截止", "2026年3月全国计算机等级考试报名截止", "computer"],
+                    25: ["各类考试成绩查询", "计算机等级、英语四六级等考试成绩集中查询期", "other"]
+                }
+            },
+            "2026-01": {
+                season: "winter",
+                events: {
+                    10: ["英语四六级成绩查询", "下半年英语四六级成绩查询开始", "cet"],
+                    20: ["教师资格考试(笔试)报名开始", "2026年上半年教师资格考试笔试报名开始", "teacher"],
+                    25: ["计算机等级考试备考期", "2026年3月全国计算机等级考试备考期", "computer"]
+                }
+            },
+            "2026-02": {
+                season: "winter",
+                events: {
+                    5: ["各类考试报名准备", "2026年各类考试报名材料准备期", "other"],
+                    15: ["教师资格考试(笔试)报名截止", "2026年上半年教师资格考试笔试报名截止", "teacher"],
+                    25: ["计算机等级考试准考证打印", "2026年3月全国计算机等级考试准考证打印开始", "computer"]
+                }
+            }
+        };
+
+        // 月份/星期名称映射
+        const monthNames = [
+            "一月", "二月", "三月", "四月", "五月", "六月",
+            "七月", "八月", "九月", "十月", "十一月", "十二月"
+        ];
+        const dayNames = ["日", "一", "二", "三", "四", "五", "六"];
+
+        // 页面加载完成初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            // 显示当前日期（优化格式）
+            const now = new Date();
+            const currentDateDisplay = document.getElementById('current-date-display');
+            const formattedDate = `${now.getFullYear()}年${String(now.getMonth()+1).padStart(2, '0')}月${String(now.getDate()).padStart(2, '0')}日 星期${dayNames[now.getDay()]}`;
+            currentDateDisplay.textContent = `当前日期：${formattedDate}`;
+
+            // 生成日历
+            generateCalendar();
+
+            // 绑定核心事件
+            bindEventListeners();
+
+            // 标记今天
+            markToday();
+
+            // 初始化日期输入框默认值
+            const todayStr = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+            document.getElementById('start-date').value = todayStr;
+            document.getElementById('end-date').value = todayStr;
+        });
+
+        // 生成日历（优化视觉渲染）
+        function generateCalendar() {
+            const calendarContainer = document.getElementById('calendar-container');
+            calendarContainer.innerHTML = '';
+
+            // 生成12个月日历（2025年3月-2026年2月）
+            for (let month = 2; month < 14; month++) {
+                const actualMonth = month % 12;
+                const year = month < 12 ? 2025 : 2026;
+                const monthKey = `${year}-${String(actualMonth+1).padStart(2, '0')}`;
+                const monthData = calendarData[monthKey] || { season: "spring", events: {} };
+                
+                // 创建月份卡片
+                const monthCard = document.createElement('div');
+                monthCard.className = `month-card ${monthData.season} fade-in`;
+                monthCard.style.animationDelay = `${(month-2)*0.1}s`; // 逐一生成动画
+
+                // 月份标题
+                const monthHeader = document.createElement('div');
+                monthHeader.className = `month-header ${monthData.season}`;
+                monthHeader.innerHTML = `
+                    <div class="month-title">${monthNames[actualMonth]}</div>
+                    <div class="month-year">${year}年</div>
+                `;
+
+                // 日历内容
+                const calendar = document.createElement('div');
+                calendar.className = 'calendar';
+
+                // 星期标题
+                const weekdays = document.createElement('div');
+                weekdays.className = 'weekdays';
+                dayNames.forEach(day => {
+                    const dayElement = document.createElement('div');
+                    dayElement.textContent = day;
+                    // 周末标红
+                    if (day === '日' || day === '六') {
+                        dayElement.style.color = '#ef4444';
+                    }
+                    weekdays.appendChild(dayElement);
+                });
+
+                // 日期网格
+                const daysContainer = document.createElement('div');
+                daysContainer.className = 'days';
+
+                // 计算该月第一天是星期几
+                const firstDay = new Date(year, actualMonth, 1).getDay();
+
+                // 添加空白日期
+                for (let i = 0; i < firstDay; i++) {
+                    const emptyDay = document.createElement('div');
+                    emptyDay.className = 'day empty';
+                    daysContainer.appendChild(emptyDay);
+                }
+
+                // 计算该月天数
+                const daysInMonth = new Date(year, actualMonth + 1, 0).getDate();
+
+                // 添加日期
+                for (let day = 1; day <= daysInMonth; day++) {
+                    const dayElement = document.createElement('div');
+                    dayElement.className = 'day';
+
+                    // 日期数字
+                    const dayNumber = document.createElement('div');
+                    dayNumber.className = 'day-number';
+                    dayNumber.textContent = day;
+                    dayElement.appendChild(dayNumber);
+
+                    // 日期标识
+                    const dateStr = `${year}-${String(actualMonth+1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+                    dayElement.dataset.date = dateStr;
+
+                    // 检查是否有考试安排
+                    if (monthData.events[day]) {
+                        dayElement.classList.add('has-event');
+                        
+                        // 考试预览文本
+                        const eventPreview = document.createElement('div');
+                        eventPreview.className = 'event-preview';
+                        eventPreview.textContent = monthData.events[day][0];
+                        dayElement.appendChild(eventPreview);
+
+                        // 点击显示详情
+                        dayElement.addEventListener('click', function() {
+                            showEventPanel(this.dataset.date);
+                        });
+                    }
+
+                    // 检查是否是假期
+                    if (isHoliday(year, actualMonth+1, day)) {
+                        dayElement.classList.add('holiday');
+                        dayNumber.style.color = '#ef4444'; // 假期日期标红
+                    }
+
+                    daysContainer.appendChild(dayElement);
+                }
+
+                // 组装日历
+                calendar.appendChild(weekdays);
+                calendar.appendChild(daysContainer);
+                monthCard.appendChild(monthHeader);
+                monthCard.appendChild(calendar);
+                calendarContainer.appendChild(monthCard);
+            }
+        }
+
+        // 判断是否为假期（优化逻辑）
+        function isHoliday(year, month, day) {
+            const date = new Date(year, month-1, day);
+            const dayOfWeek = date.getDay();
+            
+            // 周末（周日/周六）
+            if (dayOfWeek === 0 || dayOfWeek === 6) {
+                return true;
+            }
+
+            // 2025年法定节假日（精准版）
+            const holidays = [
+                `${year}-01-01`, // 元旦
+                `${year}-04-05`, `${year}-04-06`, `${year}-04-07`, // 清明节
+                `${year}-05-01`, `${year}-05-02`, `${year}-05-03`, `${year}-05-04`, `${year}-05-05`, // 劳动节
+                `${year}-06-01`, `${year}-06-02`, `${year}-06-03`, // 端午节
+                `${year}-09-12`, `${year}-09-13`, `${year}-09-14`, // 中秋节
+                `${year}-10-01`, `${year}-10-02`, `${year}-10-03`, `${year}-10-04`, `${year}-10-05`, `${year}-10-06`, `${year}-10-07` // 国庆节
+            ];
+
+            const dateStr = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+            return holidays.includes(dateStr);
+        }
+
+        // 标记今天（优化样式）
+        function markToday() {
+            const today = new Date();
+            const todayStr = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+            
+            const todayElement = document.querySelector(`.day[data-date="${todayStr}"]`);
+            if (todayElement) {
+                todayElement.classList.add('today');
+                // 添加今日标识
+                const todayBadge = document.createElement('div');
+                todayBadge.style.fontSize = '8px';
+                todayBadge.style.color = 'white';
+                todayBadge.style.fontWeight = 'bold';
+                todayBadge.textContent = '今日';
+                todayElement.appendChild(todayBadge);
+            }
+        }
+
+        // 显示考试详情面板（优化交互）
+        function showEventPanel(dateStr) {
+            const [year, month, day] = dateStr.split('-').map(Number);
+            const monthKey = `${year}-${String(month).padStart(2, '0')}`;
+            const monthData = calendarData[monthKey];
+
+            const panel = document.getElementById('event-panel');
+            const panelDate = document.getElementById('panel-date');
+            const eventList = document.getElementById('event-list');
+
+            // 设置面板日期（优化格式）
+            const weekDay = dayNames[new Date(year, month-1, day).getDay()];
+            panelDate.textContent = `${year}年${month}月${day}日 星期${weekDay}`;
+
+            // 清空事件列表
+            eventList.innerHTML = '';
+
+            // 添加考试详情
+            if (monthData && monthData.events[day]) {
+                const eventData = monthData.events[day];
+                const eventItem = document.createElement('li');
+                eventItem.className = 'event-item';
+
+                // 考试详情HTML（增加图标和样式）
+                eventItem.innerHTML = `
+                    <div class="event-time">
+                        <i class="fas fa-clock" style="color: var(--primary); margin-right: 5px;"></i>全天
+                    </div>
+                    <div class="event-details">
+                        <div class="event-title">${eventData[0]}</div>
+                        <div class="event-desc">
+                            <i class="fas fa-info-circle" style="color: var(--gray); margin-right: 5px;"></i>${eventData[1]}
+                        </div>
+                        <span class="event-badge badge-${eventData[2]}">${getBadgeText(eventData[2])}</span>
+                        <div style="margin-top: 8px;">
+                            <a href="#" style="color: var(--primary); font-size: 12px; text-decoration: none;">
+                                <i class="fas fa-external-link-alt"></i> 查看官方通知
+                            </a>
+                        </div>
+                    </div>
+                `;
+
+                eventList.appendChild(eventItem);
+            } else {
+                // 无考试安排提示
+                const noEventItem = document.createElement('li');
+                noEventItem.className = 'event-item';
+                noEventItem.innerHTML = `
+                    <div class="event-details" style="text-align: center; width: 100%;">
+                        <i class="fas fa-calendar-check" style="color: var(--gray); font-size: 24px; margin-bottom: 10px; display: block;"></i>
+                        <div class="event-title">当日无考试安排</div>
+                        <div class="event-desc">这一天没有预定的资格考试，可合理安排复习计划</div>
+                    </div>
+                `;
+                eventList.appendChild(noEventItem);
+            }
+
+            // 显示面板并滚动到可视区域
+            panel.classList.add('active');
+            panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // 获取徽章文本
+        function getBadgeText(type) {
+            switch(type) {
+                case 'cet': return '英语四六级';
+                case 'computer': return '计算机等级';
+                case 'teacher': return '教师资格';
+                case 'other': return '其他考试';
+                default: return '考试';
+            }
+        }
+
+        // 关闭详情面板
+        function closeEventPanel() {
+            const panel = document.getElementById('event-panel');
+            panel.classList.remove('active');
+        }
+
+        // 高亮日期范围（优化逻辑）
+        function highlightDateRange() {
+            const startDate = document.getElementById('start-date').value;
+            const endDate = document.getElementById('end-date').value;
+
+            if (!startDate || !endDate) {
+                alert('请选择开始日期和结束日期');
+                return;
+            }
+
+            const start = new Date(startDate);
+            const end = new Date(endDate);
+
+            if (start > end) {
+                alert('开始日期不能晚于结束日期');
+                return;
+            }
+
+            // 清除之前的高亮
+            document.querySelectorAll('.day.highlight').forEach(day => {
+                day.classList.remove('highlight');
+            });
+
+            // 高亮选中范围
+            const allDays = document.querySelectorAll('.day:not(.empty)');
+            allDays.forEach(day => {
+                const dayDate = new Date(day.dataset.date);
+                if (dayDate >= start && dayDate <= end) {
+                    day.classList.add('highlight');
+                }
+            });
+
+            // 滚动到日历区域
+            document.getElementById('calendar-container').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // 搜索考试（优化匹配逻辑）
+        function searchActivities() {
+            const searchTerm = document.getElementById('activity-search').value.trim().toLowerCase();
+
+            // 清除之前的高亮
+            document.querySelectorAll('.day.highlight').forEach(day => {
+                day.classList.remove('highlight');
+            });
+
+            if (!searchTerm) return;
+
+            // 搜索匹配的考试（支持模糊匹配）
+            let foundCount = 0;
+            Object.keys(calendarData).forEach(monthKey => {
+                const monthData = calendarData[monthKey];
+                Object.keys(monthData.events).forEach(day => {
+                    const event = monthData.events[day];
+                    const eventName = event[0].toLowerCase();
+                    const eventDesc = event[1].toLowerCase();
+
+                    if (eventName.includes(searchTerm) || eventDesc.includes(searchTerm)) {
+                        const dateStr = `${monthKey}-${String(day).padStart(2, '0')}`;
+                        const dayElement = document.querySelector(`.day[data-date="${dateStr}"]`);
+                        if (dayElement) {
+                            dayElement.classList.add('highlight');
+                            foundCount++;
+                        }
+                    }
+                });
+            });
+
+            // 提示搜索结果
+            if (foundCount === 0) {
+                alert(`未找到包含"${searchTerm}"的考试安排`);
+            } else {
+                // 滚动到日历区域
+                document.getElementById('calendar-container').scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // 绑定所有事件监听器
+        function bindEventListeners() {
+            // 日期范围高亮按钮
+            document.getElementById('highlight-range').addEventListener('click', highlightDateRange);
+            // 关闭面板按钮
+            document.getElementById('close-panel').addEventListener('click', closeEventPanel);
+            // 搜索框输入事件
+            document.getElementById('activity-search').addEventListener('input', searchActivities);
+            // 季节切换按钮
+            const seasonButtons = document.querySelectorAll('.season-btn');
+            const seasonInfos = document.querySelectorAll('.season-info');
+            const monthCards = document.querySelectorAll('.month-card');
+
+            seasonButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const season = this.getAttribute('data-season');
+
+                    // 更新按钮状态
+                    seasonButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // 更新季节信息显示
+                    seasonInfos.forEach(info => info.classList.remove('active'));
+                    document.getElementById(`${season}-info`).classList.add('active');
+
+                    // 更新月份卡片显示
+                    monthCards.forEach(card => {
+                        if (card.classList.contains(season)) {
+                            card.style.display = 'block';
+                            card.classList.add('fade-in');
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+
+                    // 滚动到季节信息区域
+                    document.getElementById(`${season}-info`).scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+
+            // 点击面板外部关闭面板
+            document.addEventListener('click', function(e) {
+                const panel = document.getElementById('event-panel');
+                const panelContent = panel.querySelector('.event-panel-header, .event-list');
+                if (panel.classList.contains('active') && !panelContent.contains(e.target) && e.target !== panel) {
+                    closeEventPanel();
+                }
+            });
+        }
+    </script>
+          <script src="./js/myjj.js"></script>
+          <script>
+          // 增强版滚动动画效果
+function initScrollAnimations() {
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: [0.1, 0.3, 0.5]
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // 根据可见程度设置不同的动画延迟
+                const intersectionRatio = entry.intersectionRatio;
+                if (intersectionRatio > 0.3) {
+                    entry.target.classList.add('visible');
+                }
+            }
+        });
+    }, observerOptions);
+
+    // 观察需要动画的元素
+    const elementsToAnimate = [
+        '.season-nav',
+        '.search-controls',
+        '.season-info',
+        '.month-card'
+    ];
+
+    elementsToAnimate.forEach(selector => {
+        document.querySelectorAll(selector).forEach(element => {
+            observer.observe(element);
+        });
+    });
+
+    // 立即显示首屏可见元素
+    const firstScreenObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                firstScreenObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    const firstScreenElements = document.querySelectorAll('.header-banner, .season-nav, .search-controls');
+    firstScreenElements.forEach(element => {
+        firstScreenObserver.observe(element);
+    });
+}
+          </script>
+</body>
+</html>

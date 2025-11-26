@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一类竞赛（D级）- 河北科技大学本科生学科竞赛信息网</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css"> <!-- 引入现有全局CSS -->
+</head>
+<body>
+        <div class="quote-fall-container" id="quoteContainer"></div>
+    <header>
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="./index.html" class="logo">
+                    <img src="./images/logo.png" alt="河北科技大学学习辅助平台">
+                </a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">首页 <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="index.html#competitions" class="dropdown-item"><i class="fas fa-trophy"></i> 竞赛等级</a>
+                            <a href="index.html#features" class="dropdown-item"><i class="fas fa-star"></i> 功能特色</a>
+                            <a href="index.html#quick-access" class="dropdown-item"><i class="fas fa-link"></i> 快速链接</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./DYC1.html" class="nav-link active">竞赛 <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="A.html" class="dropdown-item"><i class="fas fa-trophy"></i> A级比赛</a>
+                            <a href="B.html" class="dropdown-item"><i class="fas fa-medal"></i> B级比赛</a>
+                            <a href="C.html" class="dropdown-item"><i class="fas fa-award"></i> C级比赛</a>
+                            <a href="D.html" class="dropdown-item"><i class="fas fa-certificate"></i> D级比赛</a>
+                            <a href="time.html" class="dropdown-item"><i class="fas fa-calendar-alt"></i> 比赛日历</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Huodong.html" class="nav-link">事件 <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="Huodong.html" class="dropdown-item"><i class="fas fa-calendar-day"></i> 活动日历</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Kecheng.html" class="nav-link">课程</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./fankui.html" class="nav-link">反馈</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="header-banner">
+            <div class="banner-overlay"></div>
+            <div class="banner-content">
+                <h1>D级竞赛</h1>
+                <p>其他国家行政机构资助或主办的大学生学科竞赛活动，为学生提供多样化的实践机会。</p>
+            </div>
+        </div>
+    <!-- 主体内容 -->
+    <div class="container">
+        <div class="page-header d-level-header">
+            <h2>一类竞赛（D级）详情</h2>
+            <p>D级竞赛为其他国家行政机构资助或主办的大学生学科竞赛活动，或列入中国高等教育学会《全国普通高校大学生竞赛分析报告》竞赛目录中的其他竞赛，我校D级竞赛共56项，具体信息如下：</p>
+        </div>
+
+        <!-- <div class="location-tool">
+            <label for="competition-index">快速定位竞赛（按序号）：</label>
+            <select id="competition-index" onchange="locateCompetition()">
+                <option value="">请选择序号</option>
+            </select>
+        </div> -->
+
+        <div class="table-container">
+            <table class="competition-table d-competition-table" id="d-competition-table">
+                <thead>
+                    <tr>
+                        <th class="table-index d-table-index">序号</th>
+                        <th>竞赛名称</th>
+                        <th>主办方</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="d-1"><td class="table-index d-table-index">1</td><td>中国国际飞行器设计挑战赛</td><td class="table-organizer">国家体育总局航管中心、中国航空运动协会</td></tr>
+                    <tr id="d-2"><td class="table-index d-table-index">2</td><td><a href="https://ucc.fltrp.com" target="_blank" class="competition-link">外研社全国大学生英语系列赛（①英语演讲、②英语辩论、③英语写作、④英语阅读）</a></td><td class="table-organizer">北京外国语大学</td></tr>
+                    <tr id="d-3"><td class="table-index d-table-index">3</td><td><a href="http://www.huacanjiang.com/home/homepage" target="_blank" class="competition-link">两岸新锐设计竞赛·华灿奖</a></td><td class="table-organizer">中国高等教育学会、中华中山文化交流协会和北京歌华传媒集团有限责任公司</td></tr>
+                    <tr id="d-4"><td class="table-index d-table-index">4</td><td><a href="http://iche.zju.edu.cn/" target="_blank" class="competition-link">全国大学生化工设计竞赛</a></td><td class="table-organizer">教育部高等学校化工类专业教学指导委员会、中国化工学会、中国化工教育协会</td></tr>
+                    <tr id="d-5"><td class="table-index d-table-index">5</td><td><a href="http://www.china-cssc.org/show-289-1571-1.html" target="_blank" class="competition-link">全国大学生市场调查与分析大赛</a></td><td class="table-organizer">教育部高等学校统计学类专业教学指导委员会、中国商业统计学会</td></tr>
+                    <tr id="d-6"><td class="table-index d-table-index">6</td><td><a href="http://www.chengtudasai.com/" class="competition-link">全国大学生先进成图技术与产品信息建模创新大赛</a></td><td class="table-organizer">教育部高等学校工程图学课程教学指导委员会、中国图学学会制图技术专业委员会和中国图学学会产品信息建模专业委员会</td></tr>
+                    <tr id="d-7"><td class="table-index d-table-index">7</td><td><a href="https://3dds.3ddl.net/" target="_blank" class="competition-link">全国三维数字化创新设计大赛</a></td><td class="table-organizer">联合国家制造业信息化培训中心、全国三维数字化技术推广服务与教育培训联盟（3D动力）、北京光华设计发展基金会</td></tr>
+                    <tr id="d-8"><td class="table-index d-table-index">8</td><td><a href="https://jsjds.blcu.edu.cn/index.htm" target="_blank" class="competition-link">中国大学生计算机设计大赛</a></td><td class="table-organizer">教育部高等学校计算机类专业教学指导委员会</td></tr>
+                    <tr id="d-9"><td class="table-index d-table-index">9</td><td><a href="http://www.c4best.cn/" target="_blank" class="competition-link">中国高校计算机大赛（①大数据挑战赛、②团体程序设计天梯赛、③移动应用创新赛、④网络技术挑战赛、⑤人工智能创意赛）</a></td><td class="table-organizer">全国高等学校计算机教育研究会</td></tr>
+                    <tr id="d-10"><td class="table-index d-table-index">10</td><td><a href="https://www.milan-aap.org.cn/index.html#/" target="_blank" class="competition-link">米兰设计周--中国高校设计学科师生优秀作品展</a></td><td class="table-organizer">中国教育国际交流协会、中国高等教育学会</td></tr>
+                    <tr id="d-11"><td class="table-index d-table-index">11</td><td><a href="https://yuanxi.cugb.edu.cn/competition/jszz/qgdxsdzjnjs/jsjj/" target="_blank" class="competition-link">全国大学生地质技能竞赛</a></td><td class="table-organizer">地质教育研究分会、中国地质大学（北京）自然文化研究院</td></tr>
+                    <tr id="d-12"><td class="table-index d-table-index">12</td><td><a href="https://gd.moocollege.com/home" target="_blank" class="competition-link">全国大学生光电设计竞赛</a></td><td class="table-organizer">中国光学学会</td></tr>
+                    <tr id="d-13"><td class="table-index d-table-index">13</td><td><a href="http://univ.ciciec.com/" target="_blank" class="competition-link">全国大学生集成电路创新创业大赛</a></td><td class="table-organizer">工业和信息化部人才交流中心</td></tr>
+                    <tr id="d-14"><td class="table-index d-table-index">14</td><td><a href="https://www.jxds.tech/" target="_blank" class="competition-link">全国大学生金相技能大赛</a></td><td class="table-organizer">教育部高等学校材料类专业教学指导委员会</td></tr>
+                    <tr id="d-15"><td class="table-index d-table-index">15</td><td><a href="http://www.ciscn.cn/" target="_blank" class="competition-link">全国大学生信息安全竞赛</a></td><td class="table-organizer">中国信息安全测评中心、教育部高等学校网络空间安全专业指导委员会、中国互联网发展基金会</td></tr>
+                    <tr id="d-16"><td class="table-index d-table-index">16</td><td><a href="https://www.ncda.org.cn/" target="_blank" class="competition-link">未来设计师·全国高校数字艺术设计大赛</a></td><td class="table-organizer">工业和信息部人才交流中心</td></tr>
+                    <tr id="d-17"><td class="table-index d-table-index">17</td><td><a href="http://zpy.cstam.org.cn/" target="_blank" class="competition-link">全国周培源大学生力学竞赛</a></td><td class="table-organizer">教育部高等学校力学教学指导委员会力学基础课程教学指导分委员会、中国力学学会、周培源基金会</td></tr>
+                    <tr id="d-18"><td class="table-index d-table-index">18</td><td><a href="http://meicc.cmes.org/datacenter" target="_blank" class="competition-link">中国大学生机械工程创新创意大赛</a></td><td class="table-organizer">中国机械工程学会</td></tr>
+                    <tr id="d-19"><td class="table-index d-table-index">19</td><td><a href="http://robocup.drct-caa.org.cn/index.php/race/view?id=1071" target="_blank" class="competition-link">中国机器人大赛暨RoboCup机器人世界杯中国赛</a></td><td class="table-organizer">中国自动化学会</td></tr>
+                    <tr id="d-20"><td class="table-index d-table-index">20</td><td><a href="https://www.cnsoftbei.com/" target="_blank" class="competition-link">"中国软件杯"大学生软件设计大赛</a></td><td class="table-organizer">"中国软件杯"大学生软件设计大赛组委会</td></tr>
+                    <tr id="d-21"><td class="table-index d-table-index">21</td><td><a href="https://www.raicom.com.cn/" target="_blank" class="competition-link">睿抗机器人开发者大赛（RAICOM）</a></td><td class="table-organizer">工业和信息化部人才交流中心</td></tr>
+                    <tr id="d-22"><td class="table-index d-table-index">22</td><td><a href="http://121.196.61.97:5052/HomePage" target="_blank" class="competition-link">"大唐杯"全国大学生新一代信息通信技术大赛</a></td><td class="table-organizer">工业和信息化部人才交流中心、中国通信企业协会</td></tr>
+                    <tr id="d-23"><td class="table-index d-table-index">23</td><td><a href="https://www.huawei.com/minisite/ict-competition-2024-2025-global/cn/index.html" target="_blank" class="competition-link">华为ICT大赛</a></td><td class="table-organizer">华为公司</td></tr>
+                    <tr id="d-24"><td class="table-index d-table-index">24</td><td>----------------</td><td class="table-organizer">-</td></tr>
+                    <tr id="d-25"><td class="table-index d-table-index">25</td><td><a href="http://www.socchina.net/" target="_blank" class="competition-link">全国大学生嵌入式芯片与系统设计竞赛</a></td><td class="table-organizer">中国电子教育学会</td></tr>
+                    <tr id="d-26"><td class="table-index d-table-index">26</td><td><a href="https://culsc.cn/#/Home" target="_blank" class="competition-link">全国大学生生命科学竞赛（GULSC）</a></td><td class="table-organizer">教育部高等学校生物科学类专业教学指导委员会、教育部高等学校生物技术、生物工程类专业教学指导委员会和教育部高等学校大学生生物学课程教学指导委员会</td></tr>
+                    <tr id="d-27"><td class="table-index d-table-index">27</td><td><a href="https://gxbsxs.glodonedu.com/" target="_blank" class="competition-link">全国高校BIM毕业设计创新大赛</a<td class="table-organizer">中国土木工程学会建筑市场与招标投标研究分会、国家数字建筑行业产教融合共同体、广联达科技股份有限公司</td></tr>
+                        <tr id="d-28"><td class="table-index d-table-index">28</td><td><a href="http://www.cubec.org.cn/" target="_blank" class="competition-link">全国高校商业精英挑战赛（①品牌策划竞赛、②会展专业创新创业实践竞赛、③国际贸易竞赛、④创新创业竞赛、⑤会计与商业管理案例竞赛）</a></td><td class="table-organizer">中国国际贸易促进委员会商业行业委员会、中国国际商会商业行业商会、中国商业经济学会</td></tr>
+                        <tr id="d-29"><td class="table-index d-table-index">29</td><td><a href="http://www.bster.cn/cyds/index" target="_blank" class="competition-link">"学创杯"全国大学生创业综合模拟大赛</a></td><td class="table-organizer">高等学校国家级实验教学示范中心联席会经济与管理学科组、中国陶行知研究会</td></tr>
+                        <tr id="d-30"><td class="table-index d-table-index">30</td><td><a href="https://robotcontest2024.moocollege.com/" target="_blank" class="competition-link">中国高校智能机器人创意大赛</a></td><td class="table-organizer">中国高等教育学会、教育部工程图学课程教学指导分委员会</td></tr>
+                        <tr id="d-31"><td class="table-index d-table-index">31</td><td><a href="https://www.cdec.org.cn/" target="_blank" class="competition-link">中国好创意暨全国数字艺术设计大赛</a></td><td class="table-organizer">中国电子视像行业协会</td></tr>
+                        <tr id="d-32"><td class="table-index d-table-index">32</td><td><a href="https://www.caairobot.com/" target="_blank" class="competition-link">中国机器人及人工智能大赛</a></td><td class="table-organizer">中国机器人及人工智能大赛组委会</td></tr>
+                        <tr id="d-33"><td class="table-index d-table-index">33</td><td><a href="https://contest.i21st.cn/" target="_blank" class="competition-link">"21世纪杯"全国英语演讲比赛</a></td><td class="table-organizer">21世纪报社</td></tr>
+                        <tr id="d-34"><td class="table-index d-table-index">34</td><td><a href="http://g-ican.com/home/index" target="_blank" class="competition-link">iCAN大学生创新创业大赛</a></td><td class="table-organizer">中国信息协会、iCAN大学生创新创业大赛组织委员会</td></tr>
+                        <tr id="d-35"><td class="table-index d-table-index">35</td><td><a href="https://www.gonghangbei.com/" target="_blank" class="competition-link">"工行杯"全国大学生金融科技创新大赛</a></td><td class="table-organizer">中国工商银行股份有限公司</td></tr>
+                        <tr id="d-36"><td class="table-index d-table-index">36</td><td>"外教社杯"全国高校学生跨文化能力大赛</td><td class="table-organizer">中国教育国际交流协会指导、上海外国语大学、上海外语教育出版社承办</td></tr>
+                        <tr id="d-37"><td class="table-index d-table-index">37</td><td><a href="https://star.baidu.com/" target="_blank" class="competition-link">百度之星·程序设计大赛</a></td><td class="table-organizer">百度在线网络技术（北京）有限公司（简称百度公司）</td></tr>
+                        <tr id="d-38"><td class="table-index d-table-index">38</td><td><a href="https://www.shejijingsai.com/2024/06/1153037.html" target="_blank" class="competition-link">全国大学生工业设计大赛</a></td><td class="table-organizer">全国工业设计一流专业建设协同创新平台、广东省本科高校工业设计专业教学指导委员会</td></tr>
+                        <tr id="d-39"><td class="table-index d-table-index">39</td><td><a href="https://sljzw.hhu.edu.cn/2025/0331/c11808a300361/page.htm" target="_blank" class="competition-link">全国大学生水利创新设计大赛</a></td><td class="table-organizer">中国水利教育协会</td></tr>
+                        <tr id="d-40"><td class="table-index d-table-index">40</td><td><a href="http://edu.cteic.com/match/app/main" target="_blank" class="competition-link">全国大学生化工实验大赛</a></td><td class="table-organizer">中国化工教育协会</td></tr>
+                        <tr id="d-41"><td class="table-index d-table-index">41</td><td>全国大学生化学实验创新设计大赛</td><td class="table-organizer">中国化学会和教育部高等学校国家级实验教学示范中心联席会</td></tr>
+                        <tr id="d-42"><td class="table-index d-table-index">42</td><td><a href="https://os.educg.net/#/" target="_blank" class="competition-link">全国大学生计算机系统能力大赛</a></td><td class="table-organizer">全国高校计算机教育研究会、全国大学生计算机系统能力大赛组委会</td></tr>
+                        <tr id="d-43"><td class="table-index d-table-index">43</td><td><a href="https://www.shejijingsai.com/2025/09/1428272.html" target="_blank" class="competition-link">全国大学生花园设计建造竞赛</a></td><td class="table-organizer">中国风景园林学会教育工作委员会、北京林业大学</td></tr>
+                        <tr id="d-44"><td class="table-index d-table-index">44</td><td><a href="https://iot.sjtu.edu.cn/Default.aspx" target="_blank" class="competition-link">全国大学生物联网设计竞赛</a></td><td class="table-organizer">全国高等学校计算机教育研究会、全国大学生物网设计竞赛组织委员会</td></tr>
+                        <tr id="d-45"><td class="table-index d-table-index">45</td><td>全国大学生信息安全与对抗技术竞赛</td><td class="table-organizer">中国兵工学会</td></tr>
+                        <tr id="d-46"><td class="table-index d-table-index">46</td><td>全国大学生测绘学科创新创业智能大赛</td><td class="table-organizer">教育部高等学校测绘类专业教学指导委员会、中国测绘学会教育工作委员会</td></tr>
+                        <tr id="d-47"><td class="table-index d-table-index">47</td><td><a href="http://tjjmds.ai-learning.net/" target="_blank" class="competition-link">全国大学生统计建模大赛</a></td><td class="table-organizer">中国统计教育学会</td></tr>
+                        <tr id="d-48"><td class="table-index d-table-index">48</td><td><a href="https://energy.qibebt.ac.cn/eneco/contribution/index.html#/index" target="_blank" class="competition-link">全国大学生能源经济学术创意大赛</a></td><td class="table-organizer">中国优选法统筹法与经济数学研究会</td></tr>
+                        <tr id="d-49"><td class="table-index d-table-index">49</td><td><a href="http://cmit.cn/" target="_blank" class="competition-link">全国大学生数字媒体科技作品及创意竞赛</a></td><td class="table-organizer">中国人工智能学会</td></tr>
+                        <tr id="d-50"><td class="table-index d-table-index">50</td><td>全国本科院校税收风险管控案例大赛</td><td class="table-organizer">全国本科院校税收风险管控案例大赛组委会</td></tr>
+                        <tr id="d-51"><td class="table-index d-table-index">51</td><td><a href="https://bisai.ibizsim.cn/cms/qimoquanguosai/460.html" target="_blank" class="competition-link">全国企业竞争模拟大赛</a></td><td class="table-organizer">中国管理现代化研究会</td></tr>
+                        <tr id="d-52"><td class="table-index d-table-index">52</td><td>全国高等院校数智化企业经营沙盘大赛</td><td class="table-organizer">中国商业联合会、新道科技股份有限公司</td></tr>
+                        <tr id="d-53"><td class="table-index d-table-index">53</td><td><a href="http://bisai.ccen.com.cn/home" target="_blank" class="competition-link">全国数字建筑创新应用大赛</a></td><td class="table-organizer">中国建设教育协会</td></tr>
+                        <tr id="d-54"><td class="table-index d-table-index">54</td><td><a href="https://www.aicomp.cn/about" target="_blank" class="competition-link">全球校园人工智能算法精英大赛</a></td><td class="table-organizer">江苏省人工智能学会</td></tr>
+                        <tr id="d-55"><td class="table-index d-table-index">55</td><td><a href="https://uiaec.ujs.edu.cn/" target="_blank" class="competition-link">国际大学生智能农业装备创新大赛</a></td><td class="table-organizer">国际农业和生物系统工程委员会、中国农业机械学会、中国农业工程学会、省部共建现代农业装备与技术协同创新中心和农业工程大学国际联盟</td></tr>
+                        <tr id="d-56"><td class="table-index d-table-index">56</td><td>"科云杯"全国大学生财会职业能力大赛</td><td class="table-organizer">中国商业会计学会、厦门科云信息科技有限公司</td></tr>
+                    </tbody>
+                </table>
+            </div>
+    
+            <div class="footer-info">
+                <p>本网站依据《河北科技大学关于〈本科生学科竞赛管理办法〉的补充规定》制作 | 2025年7月1日施行 | 解释权归教务处所有</p>
+            </div>
+        </div>
+    
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <h3>关于我们</h3>
+                        <ul class="footer-links">
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> 学校简介</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> 领导团队</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> 组织机构</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> 校园文化</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>招生信息</h3>
+                        <ul class="footer-links">
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> 本科生招生</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> 研究生招生</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> 留学生招生</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> 继续教育</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>校园生活</h3>
+                        <ul class="footer-links">
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> 学生活动</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> 社团组织</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> 校园服务</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> 住宿信息</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>联系我们</h3>
+                        <ul class="footer-links">
+                            <li><a href="#"><i class="fas fa-map-marker-alt"></i> 河北省石家庄市裕华区裕翔街26号</a></li>
+                            <li><a href="#"><i class="fas fa-phone"></i> 0311-81668111</a></li>
+                            <li><a href="#"><i class="fas fa-envelope"></i> webmaster@hebust.edu.cn</a></li>
+                            <li><a href="#"><i class="fas fa-globe"></i> www.hebust.edu.cn</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>© 2025 河北科技大学 版权所有 | 冀ICP备05002802号</p>
+                </div>
+            </div>
+        </footer>
+    
+        <script>
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+    
+            // 表格行渐入动画（复用现有脚本）
+            document.addEventListener('DOMContentLoaded', function() {
+                // 1. 动态生成序号选择下拉菜单
+                const selectElement = document.getElementById("competition-index");
+                for (let i = 1; i <= 56; i++) {
+                    const option = document.createElement("option");
+                    option.value = `d-${i}`;
+                    option.textContent = `第${i}项`;
+                    selectElement.appendChild(option);
+                }
+    
+                // 2. 验证D级竞赛数量是否为56项
+                const dTableRows = document.querySelectorAll('.d-competition-table tbody tr').length;
+                if (dTableRows !== 56) {
+                    console.warn(`D级竞赛数量与规定不符，应为56项，当前显示${dTableRows}项，请核对信息！`);
+                }
+    
+                // 3. 表格行渐入效果
+                const tableRows = document.querySelectorAll('.d-competition-table tbody tr');
+                tableRows.forEach((row, index) => {
+                    row.style.opacity = '0';
+                    row.style.transform = 'translateY(10px)';
+                    row.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                    
+                    // 分批渐入，避免一次性加载卡顿
+                    if (index < 20) {
+                        setTimeout(() => {
+                            row.style.opacity = '1';
+                            row.style.transform = 'translateY(0)';
+                        }, index * 30);
+                    } else if (index < 40) {
+                        setTimeout(() => {
+                            row.style.opacity = '1';
+                            row.style.transform = 'translateY(0)';
+                        }, (index - 20) * 20 + 600);
+                    } else {
+                        setTimeout(() => {
+                            row.style.opacity = '1';
+                            row.style.transform = 'translateY(0)';
+                        }, (index - 40) * 15 + 1000);
+                    }
+                });
+    
+                // 4. 小屏幕横向滚动提示（复用现有脚本）
+                const tableContainer = document.querySelector('.table-container');
+                const isSmallScreen = window.innerWidth < 768;
+                
+                if (isSmallScreen) {
+                    const scrollTip = document.createElement('div');
+                    scrollTip.style.position = 'absolute';
+                    scrollTip.style.top = '10px';
+                    scrollTip.style.right = '10px';
+                    scrollTip.style.color = '#7c3aed';
+                    scrollTip.style.fontSize = '12px';
+                    scrollTip.style.display = 'flex';
+                    scrollTip.style.alignItems = 'center';
+                    scrollTip.style.gap = '5px';
+                    scrollTip.innerHTML = '<i class="fas fa-hand-pointer"></i> 横向滑动查看更多';
+                    
+                    tableContainer.style.position = 'relative';
+                    tableContainer.appendChild(scrollTip);
+                    
+                    // 滚动后隐藏提示
+                    tableContainer.addEventListener('scroll', function() {
+                        if (this.scrollLeft > 10) {
+                            scrollTip.style.opacity = '0';
+                        } else {
+                            scrollTip.style.opacity = '1';
+                        }
+                    });
+                }
+            });
+    
+            function locateCompetition() {
+                const selectedId = document.getElementById("competition-index").value;
+                if (selectedId) {
+                    // 移除之前的高亮行
+                    document.querySelectorAll(".d-competition-table tr.highlight").forEach(row => {
+                        row.classList.remove("highlight");
+                    });
+                    // 定位目标行并高亮
+                    const targetRow = document.getElementById(selectedId);
+                    if (targetRow) {
+                        // 滚动到目标行（居中显示）
+                        targetRow.scrollIntoView({ behavior: "smooth", block: "center" });
+                        // 添加高亮样式
+                        targetRow.classList.add("highlight");
+                        // 3秒后取消高亮
+                        setTimeout(() => {
+                            targetRow.classList.remove("highlight");
+                        }, 3000);
+                        // 重置下拉框选择
+                        setTimeout(() => {
+                            document.getElementById("competition-index").value = "";
+                        }, 3500);
+                    }
+                }
+            }
+        </script>
+              <script src="./js/myjj.js"></script>
+    </body>
+    </html>

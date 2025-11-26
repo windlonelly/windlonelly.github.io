@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课程资源搜索平台 - 河北科技大学</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+        <div class="quote-fall-container" id="quoteContainer"></div>
+    <header>
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="./index.html" class="logo">
+                    <img src="./images/logo.png" alt="河北科技大学学习辅助平台">
+                </a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">首页 <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="index.html#competitions" class="dropdown-item"><i class="fas fa-trophy"></i> 竞赛等级</a>
+                            <a href="index.html#features" class="dropdown-item"><i class="fas fa-star"></i> 功能特色</a>
+                            <a href="index.html#quick-access" class="dropdown-item"><i class="fas fa-link"></i> 快速链接</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./DYC1.html" class="nav-link">竞赛 <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="A.html" class="dropdown-item"><i class="fas fa-trophy"></i> A级比赛</a>
+                            <a href="B.html" class="dropdown-item"><i class="fas fa-medal"></i> B级比赛</a>
+                            <a href="C.html" class="dropdown-item"><i class="fas fa-award"></i> C级比赛</a>
+                            <a href="D.html" class="dropdown-item"><i class="fas fa-certificate"></i> D级比赛</a>
+                            <a href="time.html" class="dropdown-item"><i class="fas fa-calendar-alt"></i> 比赛日历</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Huodong.html" class="nav-link">事件 <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="Huodong.html" class="dropdown-item"><i class="fas fa-calendar-day"></i> 活动日历</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Kecheng.html" class="nav-link active">课程</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./fankui.html" class="nav-link">反馈</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <div class="header-banner">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+            <h1>课程资源搜索平台</h1>
+            <p>输入课程名称，自动搜索相关PDF教材与视频教程资源。我们为您提供最全面的学习资料，助力您的学术成长。</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <!-- 搜索区域 -->
+        <section class="search-section">
+            <div class="search-container">
+                <h2 class="search-title">搜索课程资源</h2>
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="输入课程名称、专业或关键词...">
+                    <button class="search-btn"> 搜索</button>
+                </div>
+                <div class="search-tips">
+                    <p><i class="fas fa-lightbulb"></i> 搜索提示：尝试输入"高等数学"、"计算机基础"、"英语四级"等课程名称</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 热门课程推荐 -->
+        <section class="courses-section">
+            <div class="section-header">
+                <h2>热门课程推荐</h2>
+                <p>精选优质课程资源，涵盖各学科领域，助力您的学习之旅</p>
+            </div>
+            
+            <div class="courses-grid">
+                <!-- 课程卡片1 -->
+                <div class="course-card">
+                    <img src="./images/f1.webp" alt="高等数学" class="course-img">
+                    <div class="course-content">
+                        <span class="course-category">理工类</span>
+                        <h3 class="course-title">高等数学（上）</h3>
+                        <p class="course-desc">涵盖函数、极限、导数与微分等基础概念，为理工科专业打下坚实的数学基础。</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-file-pdf"></i> 12个PDF</span>
+                            <span><i class="fas fa-video"></i> 36个视频</span>
+                        </div>
+                        <a href="#" class="course-btn">查看详情</a>
+                    </div>
+                </div>
+                
+                <!-- 课程卡片2 -->
+                <div class="course-card">
+                    <img src="./images/f2.webp" alt="计算机基础" class="course-img">
+                    <div class="course-content">
+                        <span class="course-category">计算机</span>
+                        <h3 class="course-title">计算机科学导论</h3>
+                        <p class="course-desc">介绍计算机科学的基本概念、发展历程和主要领域，适合计算机专业入门学习。</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-file-pdf"></i> 8个PDF</span>
+                            <span><i class="fas fa-video"></i> 24个视频</span>
+                        </div>
+                        <a href="#" class="course-btn">查看详情</a>
+                    </div>
+                </div>
+                
+                <!-- 课程卡片3 -->
+                <div class="course-card">
+                    <img src="./images/f3.webp" alt="英语四级" class="course-img">
+                    <div class="course-content">
+                        <span class="course-category">语言类</span>
+                        <h3 class="course-title">大学英语四级备考</h3>
+                        <p class="course-desc">全面覆盖四级考试各项内容，提供词汇、语法、阅读、听力和写作的系统训练。</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-file-pdf"></i> 15个PDF</span>
+                            <span><i class="fas fa-video"></i> 42个视频</span>
+                        </div>
+                        <a href="#" class="course-btn">查看详情</a>
+                    </div>
+                </div>
+                
+                <!-- 课程卡片4 -->
+                <div class="course-card">
+                    <img src="./images/f4.jpg" alt="电路原理" class="course-img">
+                    <div class="course-content">
+                        <span class="course-category">电子工程</span>
+                        <h3 class="course-title">电路原理与分析</h3>
+                        <p class="course-desc">讲解电路基本定律、分析方法及电路元件特性，培养电路分析与设计能力。</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-file-pdf"></i> 10个PDF</span>
+                            <span><i class="fas fa-video"></i> 30个视频</span>
+                        </div>
+                        <a href="#" class="course-btn">查看详情</a>
+                    </div>
+                </div>
+                
+                <!-- 课程卡片5 -->
+                <div class="course-card">
+                    <img src="./images/f5.jpg" alt="机械设计" class="course-img">
+                    <div class="course-content">
+                        <span class="course-category">机械工程</span>
+                        <h3 class="course-title">机械设计基础</h3>
+                        <p class="course-desc">介绍机械设计的基本原理、方法和流程，包括零件设计、机构分析和强度计算。</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-file-pdf"></i> 14个PDF</span>
+                            <span><i class="fas fa-video"></i> 28个视频</span>
+                        </div>
+                        <a href="#" class="course-btn">查看详情</a>
+                    </div>
+                </div>
+                
+                <!-- 课程卡片6 -->
+                <div class="course-card">
+                    <img src="./images/f6.jpg" alt="有机化学" class="course-img">
+                    <div class="course-content">
+                        <span class="course-category">化学</span>
+                        <h3 class="course-title">有机化学</h3>
+                        <p class="course-desc">系统学习有机化合物的结构、性质、反应机理及合成方法，培养化学分析能力。</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-file-pdf"></i> 11个PDF</span>
+                            <span><i class="fas fa-video"></i> 32个视频</span>
+                        </div>
+                        <a href="#" class="course-btn">查看详情</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                        <img src="./images/f7.webp" alt="数据结构" class="course-img">
+                        <div class="course-content">
+                            <span class="course-category">计算机</span>
+                            <h3 class="course-title">数据结构与算法</h3>
+                            <p class="course-desc">深入讲解常用数据结构与算法设计，培养编程思维和问题解决能力，适合计算机专业核心课程学习。</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-file-pdf"></i> 16个PDF</span>
+                                <span><i class="fas fa-video"></i> 45个视频</span>
+                            </div>
+                            <a href="#" class="course-btn">查看详情</a>
+                        </div>
+                    </div>
+                    
+                    <div class="course-card">
+                        <img src="./images/f8.jpg" alt="大学物理" class="course-img">
+                        <div class="course-content">
+                            <span class="course-category">理工类</span>
+                            <h3 class="course-title">大学物理（力学与电磁学）</h3>
+                            <p class="course-desc">系统学习力学和电磁学基本原理，结合实验演示和案例分析，培养物理思维和科学素养。</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-file-pdf"></i> 13个PDF</span>
+                                <span><i class="fas fa-video"></i> 38个视频</span>
+                            </div>
+                            <a href="#" class="course-btn">查看详情</a>
+                        </div>
+                    </div>
+            </div>
+        </section>
+          <section class="video-resources" id="videos" style="background:transparent;">
+        <div class="container">
+            <h2>视频学习资源</h2>
+            <p class="section-desc">精选优质视频教程，涵盖各学科竞赛知识点讲解、备赛技巧分享和优秀作品展示，助力学生高效学习与备赛。</p>
+            <div class="video-container">
+                <!-- 视频卡片1 -->
+                <div class="video-card">
+                    <div class="video-player">
+                        <video src="images/1.mp4" controls="" loop=""></video>
+                    </div>
+                    <div class="video-content">
+                        <h3 class="video-title">学科竞赛备赛全攻略</h3>
+                        <p class="video-desc">详细解析各类学科竞赛的备赛流程、时间规划和学习方法，帮助您高效准备竞赛。</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 1.2k 观看</span>
+                            <span><i class="far fa-clock"></i> 3天前</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 视频卡片2 -->
+                <div class="video-card">
+                    <div class="video-player">
+                        <video src="images/2.mp4" controls="" loop=""></video>
+                    </div>
+                    <div class="video-content">
+                        <h3 class="video-title">编程竞赛核心算法解析</h3>
+                        <p class="video-desc">深入讲解动态规划、图论等编程竞赛常用算法，配有实例演示和解题技巧。</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 2.5k 观看</span>
+                            <span><i class="far fa-clock"></i> 1周前</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 视频卡片3 -->
+                <div class="video-card">
+                    <div class="video-player">
+                        <video src="images/3.mp4" controls="" loop=""></video>
+                    </div>
+                    <div class="video-content">
+                        <h3 class="video-title">数学建模竞赛经验分享</h3>
+                        <p class="video-desc">全国大学生数学建模竞赛获奖团队分享建模思路、论文写作和团队协作经验。</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 3.1k 观看</span>
+                            <span><i class="far fa-clock"></i> 2周前</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 视频卡片4 -->
+                <div class="video-card">
+                    <div class="video-player">
+                        <video src="images/4.mp4" controls="" loop=""></video>
+                    </div>
+                    <div class="video-content">
+                        <h3 class="video-title">英语竞赛口语表达技巧</h3>
+                        <p class="video-desc">提升英语口语表达能力，掌握演讲技巧，为英语类竞赛做好充分准备。</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 1.8k 观看</span>
+                            <span><i class="far fa-clock"></i> 3周前</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- 资源类型 -->
+        <section class="resources-section">
+            <div class="resources-header">
+                <h3 class="resources-title">资源类型</h3>
+                    <!-- <div class="resources-tabs">
+                        <button class="tab-btn active">全部资源</button>
+                        <button class="tab-btn">PDF教材</button>
+                        <button class="tab-btn">视频教程</button>
+                        <button class="tab-btn">习题集</button>
+                    </div> -->
+            </div>
+            
+            <div class="resources-grid">
+                <!-- 资源卡片1 -->
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h4 class="resource-title">PDF教材</h4>
+                    <p class="resource-desc">精选各学科教材电子版，支持在线预览和下载，随时随地学习。</p>
+                    <a href="#" class="resource-btn">浏览资源</a>
+                </div>
+                
+                <!-- 资源卡片2 -->
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h4 class="resource-title">视频教程</h4>
+                    <p class="resource-desc">名师讲解视频，涵盖课程重点难点，支持倍速播放和离线下载。</p>
+                    <a href="#" class="resource-btn">浏览资源</a>
+                </div>
+                
+                <!-- 资源卡片3 -->
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h4 class="resource-title">习题集</h4>
+                    <p class="resource-desc">各章节配套练习题与答案解析，巩固知识点，提升解题能力。</p>
+                    <a href="#" class="resource-btn">浏览资源</a>
+                </div>
+                
+                <!-- 资源卡片4 -->
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h4 class="resource-title">课件PPT</h4>
+                    <p class="resource-desc">教师授课课件，重点突出，结构清晰，便于复习和预习。</p>
+                    <a href="#" class="resource-btn">浏览资源</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>关于我们</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 学校简介</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 领导团队</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 组织机构</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 校园文化</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>招生信息</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 本科生招生</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 研究生招生</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 留学生招生</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 继续教育</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>校园生活</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 学生活动</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 社团组织</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 校园服务</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 后勤保障</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>联系我们</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> 河北省石家庄市裕华区裕翔街26号</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> 0311-88626666</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> jwc@hebust.edu.cn</a></li>
+                        <li><a href="#"><i class="fas fa-globe"></i> www.hebust.edu.cn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 河北科技大学 版权所有 | 冀ICP备XXXXXXXX号</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/myjj.js"></script>
+    <script>
+    // 滚动动画效果
+function initScrollAnimations() {
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                // 如果元素包含子卡片，也触发子卡片的动画
+                if (entry.target.classList.contains('courses-section') || 
+                    entry.target.classList.contains('video-resources') ||
+                    entry.target.classList.contains('resources-section')) {
+                    
+                    const cards = entry.target.querySelectorAll('.course-card, .video-card, .resource-card');
+                    cards.forEach((card, index) => {
+                        setTimeout(() => {
+                            card.classList.add('visible');
+                        }, index * 100);
+                    });
+                }
+            }
+        });
+    }, observerOptions);
+
+    // 观察需要动画的元素
+    const elementsToAnimate = [
+        '.header-banner',
+        '.search-section',
+        '.courses-section',
+        '.video-resources',
+        '.resources-section',
+        'footer'
+    ];
+
+    elementsToAnimate.forEach(selector => {
+        const elements = document.querySelectorAll(selector);
+        elements.forEach(element => {
+            observer.observe(element);
+        });
+    });
+
+    // 立即显示首屏元素
+    const firstScreenElements = document.querySelectorAll('.header-banner, .search-section');
+    firstScreenElements.forEach(element => {
+        element.classList.add('visible');
+    });
+}
+
+// 页面加载完成后初始化
+document.addEventListener('DOMContentLoaded', function() {
+    // 初始化滚动动画
+    initScrollAnimations();
+    
+    // 搜索功能
+    const searchInput = document.querySelector('.search-input');
+    const searchBtn = document.querySelector('.search-btn');
+    
+    searchBtn.addEventListener('click', function() {
+        performSearch();
+    });
+    
+    searchInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            performSearch();
+        }
+    });
+    
+    function performSearch() {
+        const searchTerm = searchInput.value.trim();
+        if (searchTerm) {
+            alert(`搜索: ${searchTerm}\n搜索功能正在开发中...`);
+            // 这里可以添加实际的搜索逻辑
+        } else {
+            alert('请输入搜索关键词');
+        }
+    }
+});
+    </script>
+</body>
+</html>

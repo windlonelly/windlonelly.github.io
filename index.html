@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>河北科技大学学习辅助平台</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="quote-fall-container" id="quoteContainer"></div>
+
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="./index.html" class="logo">
+                    <img src="./images/logo.png" alt="河北科技大学学习辅助平台">
+                </a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link active">首页 <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="#competitions" class="dropdown-item"><i class="fas fa-trophy"></i> 竞赛等级</a>
+                            <a href="#features" class="dropdown-item"><i class="fas fa-star"></i> 功能特色</a>
+                            <a href="#quick-access" class="dropdown-item"><i class="fas fa-link"></i> 快速链接</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./DYC1.html" class="nav-link">竞赛 <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="A.html" class="dropdown-item"><i class="fas fa-trophy"></i> A级比赛</a>
+                            <a href="B.html" class="dropdown-item"><i class="fas fa-medal"></i> B级比赛</a>
+                            <a href="C.html" class="dropdown-item"><i class="fas fa-award"></i> C级比赛</a>
+                            <a href="D.html" class="dropdown-item"><i class="fas fa-certificate"></i> D级比赛</a>
+                            <a href="time.html" class="dropdown-item"><i class="fas fa-calendar-alt"></i> 比赛日历</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Huodong.html" class="nav-link">事件 <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="Huodong.html" class="dropdown-item"><i class="fas fa-calendar-day"></i> 活动日历</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Kecheng.html" class="nav-link">课程</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./fankui.html" class="nav-link">反馈</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- 轮播图 -->
+    <nav class="index_banner">
+        <div class="banner-overlay">
+            <h1 class="banner-title">河北科技大学学习辅助平台</h1>
+            <p class="banner-subtitle">一站式学科竞赛信息管理与学习资源平台，为学生提供全面的竞赛信息、课程资源和校园服务。我们致力于帮助学生规划学习路径，提升学术能力，实现个人发展目标。</p>
+            <a href="./DYC1.html" class="banner-btn">探索竞赛</a>
+        </div>
+        <div class="slides-container">
+            <div class="slide active">
+                <img src="./images/banner1.jpg" alt="学习辅助平台banner">
+            </div>
+            <div class="slide">
+                <img src="./images/banner2.jpg" alt="学科竞赛banner">
+            </div>
+        </div>
+        <div class="pagination-dots"></div>
+        <div class="button-next">›</div>
+        <div class="button-prev">‹</div>
+    </nav>
+
+    <section class="competition-levels  fade-in-section" id="competitions">
+        <div class="container">
+            <h2>竞赛等级分类</h2>
+            <p class="section-desc">了解河北科技大学本科生学科竞赛的四个等级分类及其特点，根据自身情况选择合适的竞赛参与，提升个人学术能力与综合素养。</p>
+            <div class="levels-container">
+                <!-- A级竞赛 -->
+                <div class="level-card">
+                    <img src="./images/a3.webp" alt="A级竞赛" class="level-img">
+                    <div class="level-content">
+                        <span class="level-badge badge-a">1项竞赛</span>
+                        <h3 class="level-title">A级竞赛</h3>
+                        <p class="level-desc">教育部、国家发展改革委等联合组织举办的影响力较大的国际级赛事，具有极高的认可度和含金量。</p>
+                        <a href="A.html" class="level-btn">查看详情</a>
+                    </div>
+                </div>
+                <!-- B级竞赛 -->
+                <div class="level-card">
+                    <img src="./images/a1.webp" alt="B级竞赛" class="level-img">
+                    <div class="level-content">
+                        <span class="level-badge badge-b">2项竞赛</span>
+                        <h3 class="level-title">B级竞赛</h3>
+                        <p class="level-desc">教育部、共青团中央等联合组织举办的影响力较大的赛事，是国内学科竞赛的重要组成部分。</p>
+                        <a href="B.html" class="level-btn">查看详情</a>
+                    </div>
+                </div>
+                <!-- C级竞赛 -->
+                <div class="level-card">
+                    <img src="./images/a2.webp" alt="C级竞赛" class="level-img">
+                    <div class="level-content">
+                        <span class="level-badge badge-c">20项竞赛</span>
+                        <h3 class="level-title">C级竞赛</h3>
+                        <p class="level-desc">教育部、共青团中央或国际权威学术组织举办的赛事，覆盖多个学科领域，参与度广泛。</p>
+                        <a href="C.html" class="level-btn">查看详情</a>
+                    </div>
+                </div>
+                <!-- D级竞赛 -->
+                <div class="level-card">
+                    <img src="./images/a4.webp" alt="D级竞赛" class="level-img">
+                    <div class="level-content">
+                        <span class="level-badge badge-d">56项竞赛</span>
+                        <h3 class="level-title">D级竞赛</h3>
+                        <p class="level-desc">其他国家行政机构资助或主办的大学生学科竞赛活动，为学生提供多样化的实践机会。</p>
+                        <a href="D.html" class="level-btn">查看详情</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="platform-features fade-in-section" id="features">
+        <div class="container">
+            <h2>平台特色功能</h2>
+            <p class="section-desc">探索我们为学生提供的全方位学习辅助与竞赛管理功能，助力高效备赛、科学规划学习路径，实现个人能力全面提升。</p>
+            <div class="features-container">
+                <div class="feature-card">
+                    <img src="./images/c1.webp" alt="竞赛时间管理" class="feature-img">
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3 class="feature-title">竞赛时间管理</h3>
+                        <p class="feature-desc">提供全年竞赛时间安排，包括报名、校赛、省赛和国赛等关键阶段，帮助学生合理安排备赛计划，不错过重要节点。</p>
+                        <a href="time.html" class="feature-btn">查看日历</a>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <img src="./images/c2.webp" alt="竞赛时间管理" class="feature-img">
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3 class="feature-title">竞赛信息查询</h3>
+                        <p class="feature-desc">详细展示A、B、C、D四个等级共79项竞赛的详细信息，包括主办方、竞赛内容、报名方式和相关链接，一键获取全面资讯。</p>
+                        <a href="DYC1.html" class="feature-btn">浏览竞赛</a>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <img src="./images/c3.webp" alt="竞赛时间管理" class="feature-img">
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3 class="feature-title">学习资源整合</h3>
+                        <p class="feature-desc">汇集各类课程资料、历年真题、备赛攻略等学习资源，帮助学生系统掌握学科知识，针对性提升竞赛能力，为竞赛做好充分准备。</p>
+                        <a href="Kecheng.html" class="feature-btn">学习资源</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 视频资源板块 -->
+    <section class="video-resources fade-in-section" id="videos">
+        <div class="container">
+            <h2>视频学习资源</h2>
+            <p class="section-desc">精选优质视频教程，涵盖各学科竞赛知识点讲解、备赛技巧分享和优秀作品展示，助力学生高效学习与备赛。</p>
+            <div class="video-container">
+                <!-- 视频卡片1 -->
+                <div class="video-card">
+                    <div class="video-player">
+                        <video src="images/1.mp4" controls="" loop=""></video>
+                    </div>
+                    <div class="video-content">
+                        <h3 class="video-title">学科竞赛备赛全攻略</h3>
+                        <p class="video-desc">详细解析各类学科竞赛的备赛流程、时间规划和学习方法，帮助您高效准备竞赛。</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 1.2k 观看</span>
+                            <span><i class="far fa-clock"></i> 3天前</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 视频卡片2 -->
+                <div class="video-card">
+                    <div class="video-player">
+                        <video src="images/2.mp4" controls="" loop=""></video>
+                    </div>
+                    <div class="video-content">
+                        <h3 class="video-title">编程竞赛核心算法解析</h3>
+                        <p class="video-desc">深入讲解动态规划、图论等编程竞赛常用算法，配有实例演示和解题技巧。</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 2.5k 观看</span>
+                            <span><i class="far fa-clock"></i> 1周前</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 视频卡片3 -->
+                <div class="video-card">
+                    <div class="video-player">
+                        <video src="images/3.mp4" controls="" loop=""></video>
+                    </div>
+                    <div class="video-content">
+                        <h3 class="video-title">数学建模竞赛经验分享</h3>
+                        <p class="video-desc">全国大学生数学建模竞赛获奖团队分享建模思路、论文写作和团队协作经验。</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 3.1k 观看</span>
+                            <span><i class="far fa-clock"></i> 2周前</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 视频卡片4 -->
+                <div class="video-card">
+                    <div class="video-player">
+                        <video src="images/4.mp4" controls="" loop=""></video>
+                    </div>
+                    <div class="video-content">
+                        <h3 class="video-title">英语竞赛口语表达技巧</h3>
+                        <p class="video-desc">提升英语口语表达能力，掌握演讲技巧，为英语类竞赛做好充分准备。</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 1.8k 观看</span>
+                            <span><i class="far fa-clock"></i> 3周前</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quick-access fade-in-section" id="quick-access">
+        <div class="container">
+            <h2>快速访问</h2>
+            <p class="section-desc">快速跳转至网站核心功能与重要页面，节省操作时间，提升使用效率</p>
+            <div class="access-container">
+                <!-- 竞赛总览 -->
+                <div class="access-card">
+                    <div class="access-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="access-title">竞赛总览</h3>
+                    <p class="access-desc">浏览所有学科竞赛的分类与详细介绍，快速定位目标赛事</p>
+                    <a href="DYC1.html" class="access-btn">立即访问</a>
+                </div>
+                <!-- 比赛日历 -->
+                <div class="access-card">
+                    <div class="access-icon">
+                        <i class="fas fa-calendar-day"></i>
+                    </div>
+                    <h3 class="access-title">比赛日历</h3>
+                    <p class="access-desc">查看全年竞赛时间安排与关键节点，合理规划备赛进度</p>
+                    <a href="time.html" class="access-btn">查看日历</a>
+                </div>
+                <!-- 课程资源 -->
+                <div class="access-card">
+                    <div class="access-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="access-title">课程资源</h3>
+                    <p class="access-desc">获取优质学习资料与课程相关信息，夯实学科基础</p>
+                    <a href="Kecheng.html" class="access-btn">学习资源</a>
+                </div>
+                <!-- 活动日历 -->
+                <div class="access-card">
+                    <div class="access-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3 class="access-title">活动日历</h3>
+                    <p class="access-desc">查看校园活动与重要事件安排，丰富课余生活</p>
+                    <a href="Huodong.html" class="access-btn">活动安排</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>关于我们</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 学校简介</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 领导团队</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 组织机构</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 校园文化</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>招生信息</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 本科生招生</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 研究生招生</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 留学生招生</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 继续教育</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>校园生活</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 学生活动</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 社团组织</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 校园服务</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 住宿信息</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>联系我们</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> 河北省石家庄市裕华区裕翔街26号</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> 0311-81668111</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> webmaster@hebust.edu.cn</a></li>
+                        <li><a href="#"><i class="fas fa-globe"></i> www.hebust.edu.cn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 河北科技大学 版权所有 | 冀ICP备05002802号</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 轮播图逻辑
+        document.addEventListener('DOMContentLoaded', function() {
+            const config = {
+                autoplay: true,      
+                interval: 5000,     
+                transition: 1000    
+            };
+        
+            const slider = document.querySelector('.index_banner');
+            const slides = Array.from(document.querySelectorAll('.slide'));
+            const dotsContainer = document.querySelector('.pagination-dots');
+            let currentIndex = 0;
+            let autoPlayTimer;
+            
+            function createPagination() {
+                slides.forEach((_, index) => {
+                    const dot = document.createElement('div');
+                    dot.className = 'pagination-dot' + (index === 0 ? ' active' : '');
+                    dot.addEventListener('click', () => goToSlide(index));
+                    dotsContainer.appendChild(dot);
+                });
+            }
+        
+            function showSlide(index) {
+                if (index >= slides.length) index = 0;
+                if (index < 0) index = slides.length - 1;
+                currentIndex = index;
+                slides.forEach((slide, i) => {
+                    slide.classList.toggle('active', i === index);
+                });
+                Array.from(dotsContainer.children).forEach((dot, i) => {
+                    dot.classList.toggle('active', i === index);
+                });
+            }
+        
+            function nextSlide() {
+                showSlide(currentIndex + 1);
+            }
+        
+            function prevSlide() {
+                showSlide(currentIndex - 1);
+            }
+        
+            function goToSlide(index) {
+                clearInterval(autoPlayTimer);
+                showSlide(index);
+                if (config.autoplay) {
+                    autoPlayTimer = setInterval(nextSlide, config.interval);
+                }
+            }
+        
+            document.querySelector('.button-next').addEventListener('click', () => {
+                clearInterval(autoPlayTimer);
+                nextSlide();
+                if (config.autoplay) {
+                    autoPlayTimer = setInterval(nextSlide, config.interval);
+                }
+            });
+        
+            document.querySelector('.button-prev').addEventListener('click', () => {
+                clearInterval(autoPlayTimer);
+                prevSlide();
+                if (config.autoplay) {
+                    autoPlayTimer = setInterval(nextSlide, config.interval);
+                }
+            });
+        
+            createPagination();
+        
+            // 自动播放
+            if (config.autoplay) {
+                autoPlayTimer = setInterval(nextSlide, config.interval);
+            }
+        
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowRight') nextSlide();
+                if (e.key === 'ArrowLeft') prevSlide();
+            });
+
+            // 平滑滚动到锚点
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if(targetId === '#') return;
+                    const targetElement = document.querySelector(targetId);
+                    if(targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+          
+        });
+    </script>
+    <script src="./js/myjj.js"></script>
+    <script>
+function initScrollAnimation() {
+    const fadeSections = document.querySelectorAll('.fade-in-section');
+    
+    // 创建Intersection Observer
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // 当元素进入视口时添加visible类
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.1, // 当10%的元素可见时触发
+        rootMargin: '0px 0px -50px 0px' // 底部偏移，提前触发动画
+    });
+    
+    // 观察所有需要动画的section
+    fadeSections.forEach(section => {
+        observer.observe(section);
+    });
+}
+
+// 在DOM加载完成后初始化滚动动画
+document.addEventListener('DOMContentLoaded', function() {
+    initScrollAnimation();
+    
+});
+    </script>
+</body>
+</html>

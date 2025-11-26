@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>意见反馈 - 河北科技大学学习辅助平台</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+    body{background: #f1f1f1;}
+    .section-title{width: 100%;margin-bottom: 30px;}
+    .section-title::after{display: none;}
+    .form-group input, .form-group textarea, .form-group select {
+  border: 1px solid #f1f1f1;}
+    </style>
+</head>
+<body>
+        <div class="quote-fall-container" id="quoteContainer"></div>
+    <header>
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="./index.html" class="logo">
+                    <img src="./images/logo.png" alt="河北科技大学学习辅助平台">
+                </a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">首页 <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="index.html#competitions" class="dropdown-item"><i class="fas fa-trophy"></i> 竞赛等级</a>
+                            <a href="index.html#features" class="dropdown-item"><i class="fas fa-star"></i> 功能特色</a>
+                            <a href="index.html#quick-access" class="dropdown-item"><i class="fas fa-link"></i> 快速链接</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./DYC1.html" class="nav-link">竞赛 <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="A.html" class="dropdown-item"><i class="fas fa-trophy"></i> A级比赛</a>
+                            <a href="B.html" class="dropdown-item"><i class="fas fa-medal"></i> B级比赛</a>
+                            <a href="C.html" class="dropdown-item"><i class="fas fa-award"></i> C级比赛</a>
+                            <a href="D.html" class="dropdown-item"><i class="fas fa-certificate"></i> D级比赛</a>
+                            <a href="time.html" class="dropdown-item"><i class="fas fa-calendar-alt"></i> 比赛日历</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Huodong.html" class="nav-link">事件 <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="Huodong.html" class="dropdown-item"><i class="fas fa-calendar-day"></i> 活动日历</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Kecheng.html" class="nav-link">课程</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./fankui.html" class="nav-link active">反馈</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="header-banner">
+            <div class="banner-overlay"></div>
+            <div class="banner-content">
+                <h1>意见反馈</h1>
+                <p>您的意见对我们至关重要！请分享您对河北科技大学学习辅助平台的使用感受和发展建议，帮助我们不断改进和优化服务。</p>
+            </div>
+        </div>
+    <section id="feedback-form" class="section" style="padding-top: 60px;">
+        <div class="container">
+            <div class="section-title">
+                <h2>分享您的宝贵意见</h2>
+                <p>我们重视每一位用户的反馈，您的建议将帮助我们提供更好的服务</p>
+            </div>
+            <div class="feedback-section">
+                <form id="feedbackForm" class="feedback-form">
+                    <div class="form-group">
+                        <label for="experience">对网页的使用感受</label>
+                        <textarea id="experience" name="experience" placeholder="请分享您使用本网站的感受，包括哪些功能对您有帮助，哪些地方需要改进..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="suggestions">对网页发展的建议</label>
+                        <textarea id="suggestions" name="suggestions" placeholder="您希望我们增加哪些功能或内容？对网站的未来发展有什么建议？"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="improvements">具体改进建议</label>
+                        <textarea id="improvements" name="improvements" placeholder="请具体描述您认为需要改进的地方，包括界面设计、功能操作、内容组织等方面..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>总体满意度评价</label>
+                        <div class="rating-group">                            <div class="rating-item" data-value="1">
+                                <i class="fas fa-frown"></i>
+                                <div>非常不满意</div>
+                            </div>
+                            <div class="rating-item" data-value="2">
+                                <i class="fas fa-meh"></i>
+                                <div>不太满意</div>
+                            </div>
+                            <div class="rating-item" data-value="3">
+                                <i class="fas fa-smile"></i>
+                                <div>一般</div>
+                            </div>
+                            <div class="rating-item" data-value="4">
+                                <i class="fas fa-laugh"></i>
+                                <div>满意</div>
+                            </div>
+                            <div class="rating-item" data-value="5">
+                                <i class="fas fa-grin-stars"></i>
+                                <div>非常满意</div>
+                            </div>
+                        </div>
+                        <input type="hidden" id="rating" name="rating" value="">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="category">反馈类别</label>
+                            <select id="category" name="category">
+                                <option value="">请选择反馈类别</option>
+                                <option value="design">界面设计</option>
+                                <option value="function">功能操作</option>
+                                <option value="content">内容质量</option>
+                                <option value="performance">性能体验</option>
+                                <option value="other">其他</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="frequency">使用频率</label>
+                            <select id="frequency" name="frequency">
+                                <option value="">请选择使用频率</option>
+                                <option value="daily">每天使用</option>
+                                <option value="weekly">每周几次</option>
+                                <option value="monthly">每月几次</option>
+                                <option value="occasionally">偶尔使用</option>
+                                <option value="first">第一次使用</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="reset" class="btn btn-secondary">重置表单</button>
+                        <button type="submit" class="btn">提交反馈</button>
+                    </div>
+                    
+                    <div class="form-note">
+                        <i class="fas fa-info-circle"></i> 您的反馈将以匿名方式提交，我们承诺保护您的隐私
+                    </div>
+                </form>
+                
+                <div id="successMessage" class="success-message">
+                    <!-- <div class="success-icon">
+                        <i class="fas fa-check"></i>
+                    </div> -->
+                    <h3>感谢您的反馈！</h3>
+                    <p>您的宝贵意见已成功提交，我们将认真考虑您的建议并持续改进我们的服务。</p>
+                    <a href="index.html" class="btn">返回首页</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚（复用现有样式） -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>关于我们</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 学校简介</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 领导团队</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 组织机构</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 校园文化</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>招生信息</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 本科生招生</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 研究生招生</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 留学生招生</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 继续教育</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>校园生活</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 学生活动</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 社团组织</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 校园服务</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 住宿信息</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>联系我们</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> 河北省石家庄市裕华区裕翔街26号</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> 0311-81668111</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> webmaster@hebust.edu.cn</a></li>
+                        <li><a href="#"><i class="fas fa-globe"></i> www.hebust.edu.cn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 河北科技大学 版权所有 | 冀ICP备05002802号</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 导航栏滚动效果
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // 评分选择
+        document.querySelectorAll('.rating-item').forEach(item => {
+            item.addEventListener('click', function() {
+                // 移除所有选中状态
+                document.querySelectorAll('.rating-item').forEach(el => {
+                    el.classList.remove('selected');
+                });
+                
+                // 添加当前选中状态
+                this.classList.add('selected');
+                
+                // 更新隐藏输入框的值
+                document.getElementById('rating').value = this.getAttribute('data-value');
+            });
+        });
+
+        // 表单提交处理
+        document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // 表单验证逻辑
+            const rating = document.getElementById('rating').value;
+            if (!rating) {
+                alert('请选择总体满意度评价');
+                return;
+            }
+            
+            // 模拟提交成功
+            document.getElementById('feedbackForm').style.display = 'none';
+            document.getElementById('successMessage').style.display = 'block';
+            
+            // 实际项目中可添加AJAX提交逻辑
+            // fetch('/api/feedback', {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json'
+            //     },
+            //     body: JSON.stringify({
+            //         experience: document.getElementById('experience').value,
+            //         suggestions: document.getElementById('suggestions').value,
+            //         improvements: document.getElementById('improvements').value,
+            //         rating: rating,
+            //         category: document.getElementById('category').value,
+            //         frequency: document.getElementById('frequency').value
+            //     })
+            // })
+            // .then(response => response.json())
+            // .then(data => {
+            //     document.getElementById('feedbackForm').style.display = 'none';
+            //     document.getElementById('successMessage').style.display = 'block';
+            // })
+            // .catch(error => {
+            //     alert('提交失败，请稍后重试');
+            // });
+        });
+
+        // 平滑滚动到锚点
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+          <script src="./js/myjj.js"></script>
+          <script>
+          // 优化滚动动画效果
+function initScrollAnimations() {
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px 0px -100px 0px', // 提前100px触发
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // 添加延迟以确保动画流畅
+                setTimeout(() => {
+                    entry.target.classList.add('visible');
+                    
+                    // 触发子元素的动画
+                    if (entry.target.classList.contains('courses-section') || 
+                        entry.target.classList.contains('video-resources') ||
+                        entry.target.classList.contains('resources-section')) {
+                        
+                        const cards = entry.target.querySelectorAll('.course-card, .video-card, .resource-card');
+                        cards.forEach((card, index) => {
+                            setTimeout(() => {
+                                card.classList.add('visible');
+                            }, index * 50); // 减少延迟时间
+                        });
+                    }
+                    
+                    // 特殊处理搜索区域
+                    if (entry.target.classList.contains('search-section')) {
+                        const searchContainer = entry.target.querySelector('.search-container');
+                        const searchTips = entry.target.querySelector('.search-tips');
+                        if (searchContainer) {
+                            setTimeout(() => {
+                                searchContainer.classList.add('visible');
+                            }, 300);
+                        }
+                        if (searchTips) {
+                            setTimeout(() => {
+                                searchTips.classList.add('visible');
+                            }, 500);
+                        }
+                    }
+                    
+                    // 特殊处理页脚
+                    if (entry.target.classList.contains('footer')) {
+                        const footerContent = entry.target.querySelector('.footer-content');
+                        const copyright = entry.target.querySelector('.copyright');
+                        if (footerContent) {
+                            setTimeout(() => {
+                                footerContent.classList.add('visible');
+                            }, 300);
+                        }
+                        if (copyright) {
+                            setTimeout(() => {
+                                copyright.classList.add('visible');
+                            }, 600);
+                        }
+                    }
+                    
+                }, 100);
+            }
+        });
+    }, observerOptions);
+
+    // 观察需要动画的元素
+    const elementsToAnimate = document.querySelectorAll('.fade-in-section');
+    elementsToAnimate.forEach(element => {
+        observer.observe(element);
+    });
+
+    // 立即显示首屏元素
+    const firstScreenElements = document.querySelectorAll('.header-banner, .search-section');
+    firstScreenElements.forEach(element => {
+        setTimeout(() => {
+            element.classList.add('visible');
+        }, 300);
+    });
+}
+
+          </script>
+</body>
+</html>
