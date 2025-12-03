@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>专利申请指南 - 河北科技大学学习辅助平台</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="quote-fall-container" id="quoteContainer"></div>
+    <header>
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="./index.html" class="logo">
+                    <img src="./images/logo.png" alt="河北科技大学学习辅助平台">
+                </a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">首页 <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="index.html#competitions" class="dropdown-item"><i class="fas fa-trophy"></i> 竞赛等级</a>
+                            <a href="index.html#features" class="dropdown-item"><i class="fas fa-star"></i> 功能特色</a>
+                            <a href="index.html#quick-access" class="dropdown-item"><i class="fas fa-link"></i> 快速链接</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./DYC1.html" class="nav-link">竞赛 <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="A.html" class="dropdown-item"><i class="fas fa-trophy"></i> A级比赛</a>
+                            <a href="B.html" class="dropdown-item"><i class="fas fa-medal"></i> B级比赛</a>
+                            <a href="C.html" class="dropdown-item"><i class="fas fa-award"></i> C级比赛</a>
+                            <a href="D.html" class="dropdown-item"><i class="fas fa-certificate"></i> D级比赛</a>
+                            <a href="time.html" class="dropdown-item"><i class="fas fa-calendar-alt"></i> 比赛日历</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Ruanzhu.html" class="nav-link">软著</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Zhuanli.html" class="nav-link">专利</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Lunwen.html" class="nav-link">论文</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Huodong.html" class="nav-link">事件 <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="Huodong.html" class="dropdown-item"><i class="fas fa-calendar-day"></i> 活动日历</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Kecheng.html" class="nav-link">课程</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./jiaoliu.html" class="nav-link active">交流平台</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./fankui.html" class="nav-link">反馈</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="header-banner">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+            <h1>专利申请指南</h1>
+            <p>了解专利的基本类型、申请流程和保护策略，为您的创新成果提供法律保障</p>
+        </div>
+    </div>
+
+    <!-- 专利类型分布 -->
+    <section class="competition-levels fade-in-section">
+        <div class="container">
+            <h2>专利类型分布</h2>
+            <p class="section-desc">了解不同类型的专利及其特点，根据您的创新成果选择合适的专利类型</p>
+            <div class="levels-container">
+                <div class="level-card">
+                    <img src="./images/h1.webp" alt="发明专利" class="level-img">
+                    <div class="level-content">
+                        <span class="level-badge badge-a">发明专利</span>
+                        <h3 class="level-title">发明专利</h3>
+                        <p class="level-desc">对产品、方法或其改进提出的新技术方案，保护期20年，审查严格，保护力度最强。</p>
+                        <a href="#invention" class="level-btn" data-modal="invention">查看详情</a>
+                    </div>
+                </div>
+                <div class="level-card">
+                    <img src="./images/h2.webp" alt="实用新型" class="level-img">
+                    <div class="level-content">
+                        <span class="level-badge badge-b">实用新型</span>
+                        <h3 class="level-title">实用新型专利</h3>
+                        <p class="level-desc">对产品的形状、构造或其结合提出的实用新技术方案，保护期10年，审查周期较短。</p>
+                        <a href="#utility" class="level-btn" data-modal="utility">查看详情</a>
+                    </div>
+                </div>
+                <div class="level-card">
+                    <img src="./images/h3.webp" alt="外观设计" class="level-img">
+                    <div class="level-content">
+                        <span class="level-badge badge-c">外观设计</span>
+                        <h3 class="level-title">外观设计专利</h3>
+                        <p class="level-desc">对产品的形状、图案或其结合以及色彩与形状、图案的结合所作出的富有美感的设计。</p>
+                        <a href="#design" class="level-btn" data-modal="design">查看详情</a>
+                    </div>
+                </div>
+                <div class="level-card">
+                    <img src="./images/h4.webp" alt="国际专利" class="level-img">
+                    <div class="level-content">
+                        <span class="level-badge badge-d">国际专利</span>
+                        <h3 class="level-title">国际专利申请</h3>
+                        <p class="level-desc">通过PCT途径在多个国家申请专利保护，简化国际专利申请流程，扩大保护范围。</p>
+                        <a href="#international" class="level-btn" data-modal="international">查看详情</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 申请流程 -->
+    <section class="platform-features fade-in-section">
+        <div class="container">
+            <h2>专利申请流程</h2>
+            <p class="section-desc">了解专利申请的详细步骤和所需材料，确保申请过程顺利进行</p>
+            <div class="features-container">
+                <div class="feature-card">
+                    <img src="./images/i1.jpg" alt="专利检索" class="feature-img">
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3 class="feature-title">专利检索与分析</h3>
+                        <p class="feature-desc">在申请前进行专利检索，了解现有技术状况，评估专利申请的新颖性和创造性。</p>
+                        <a href="#search" class="feature-btn" data-modal="search">检索工具</a>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <img src="./images/i2.jpg" alt="材料准备" class="feature-img">
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3 class="feature-title">申请材料准备</h3>
+                        <p class="feature-desc">准备专利申请文件，包括说明书、权利要求书、摘要和附图等必要材料。</p>
+                        <a href="#materials" class="feature-btn" data-modal="materials">材料清单</a>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <img src="./images/i3.webp" alt="审查流程" class="feature-img">
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h3 class="feature-title">审查与授权</h3>
+                        <p class="feature-desc">专利局对申请进行形式审查和实质审查，通过后授予专利权并公告。</p>
+                        <a href="#examination" class="feature-btn" data-modal="examination">审查流程</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 视频教程 -->
+    <section class="video-resources fade-in-section">
+        <div class="container">
+            <h2>专利申请视频教程</h2>
+            <p class="section-desc">精选专利申请相关视频教程，帮助您了解申请流程、材料准备和常见问题</p>
+            <div class="video-container">
+                <div class="video-card">
+                    <div class="video-player">
+                        <video src="images/25.mp4" controls loop></video>
+                    </div>
+                    <div class="video-content">
+                        <h3 class="video-title">专利申请全流程详解</h3>
+                        <p class="video-desc">详细讲解专利申请的每个步骤，从检索分析到材料准备，再到审查授权的全过程。</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 3.2k 观看</span>
+                            <span><i class="far fa-clock"></i> 1周前</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-player">
+                        <video src="images/26.mp4" controls loop></video>
+                    </div>
+                    <div class="video-content">
+                        <h3 class="video-title">专利材料准备技巧</h3>
+                        <p class="video-desc">分享专利申请材料准备的技巧和注意事项，避免常见错误，提高申请成功率。</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 2.5k 观看</span>
+                            <span><i class="far fa-clock"></i> 2周前</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-player">
+                        <video src="images/27.mp4" controls loop></video>
+                    </div>
+                    <div class="video-content">
+                        <h3 class="video-title">专利常见问题解答</h3>
+                        <p class="video-desc">解答专利申请过程中常见的疑问和问题，帮助您顺利完成申请。</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 2.1k 观看</span>
+                            <span><i class="far fa-clock"></i> 3周前</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-player">
+                        <video src="images/24.mp4" controls loop></video>
+                    </div>
+                    <div class="video-content">
+                        <h3 class="video-title">专利与软著的区别</h3>
+                        <p class="video-desc">比较专利与软著申请的区别，帮助您选择最适合的知识产权保护方式。</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 2.8k 观看</span>
+                            <span><i class="far fa-clock"></i> 1月前</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 快速链接 -->
+    <section class="quick-access fade-in-section">
+        <div class="container">
+            <h2>相关资源</h2>
+            <p class="section-desc">快速访问专利申请相关资源和工具，提高申请效率</p>
+            <div class="access-container">
+                <div class="access-card">
+                    <div class="access-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3 class="access-title">申请表格下载</h3>
+                    <p class="access-desc">下载专利申请所需的各种表格和模板，包括申请书、说明书模板等。</p>
+                    <a href="https://www.cnipa.gov.cn" class="access-btn" target="_blank">下载资源</a>
+                </div>
+                <div class="access-card">
+                    <div class="access-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3 class="access-title">常见问题解答</h3>
+                    <p class="access-desc">查看专利申请过程中常见问题的解答，解决您的疑惑。</p>
+                    <a href="#faq" class="access-btn" data-modal="faq">查看FAQ</a>
+                </div>
+                <div class="access-card">
+                    <div class="access-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="access-title">政策法规</h3>
+                    <p class="access-desc">了解与专利相关的法律法规和政策文件。</p>
+                    <a href="http://www.cnipa.gov.cn" class="access-btn" target="_blank">查看法规</a>
+                </div>
+                <div class="access-card">
+                    <div class="access-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="access-title">在线课程</h3>
+                    <p class="access-desc">学习专利申请相关的在线课程，提升申请技能。</p>
+                    <a href="https://www.icourse163.org/" class="access-btn" target="_blank">学习课程</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>关于我们</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 学校简介</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 领导团队</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 组织机构</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 校园文化</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>招生信息</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 本科生招生</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 研究生招生</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 留学生招生</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 继续教育</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>校园生活</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 学生活动</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 社团组织</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 校园服务</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 住宿信息</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>联系我们</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> 河北省石家庄市裕华区裕翔街26号</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> 0311-81668111</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> webmaster@hebust.edu.cn</a></li>
+                        <li><a href="#"><i class="fas fa-globe"></i> www.hebust.edu.cn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 河北科技大学 版权所有 | 冀ICP备05002802号</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 弹窗区域 -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">弹窗标题</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button class="modal-btn">关闭</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/myjj.js"></script>
+    <script>
+        function initScrollAnimation() {
+            const fadeSections = document.querySelectorAll('.fade-in-section');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+            
+            fadeSections.forEach(section => {
+                observer.observe(section);
+            });
+        }
+
+        // 弹窗功能
+        document.addEventListener('DOMContentLoaded', function() {
+            initScrollAnimation();
+            
+            const modal = document.getElementById('modal');
+            const modalTitle = modal.querySelector('.modal-title');
+            const modalBody = modal.querySelector('.modal-body');
+            const closeBtn = modal.querySelector('.modal-close');
+            const footerBtn = modal.querySelector('.modal-btn');
+            
+            // 弹窗内容数据 - 专利相关内容
+            const modalContents = {
+                invention: {
+                    title: '发明专利',
+                    content: `
+                        <div class="modal-section">
+                            <h3>定义</h3>
+                            <p>发明专利是指对产品、方法或者其改进所提出的新的技术方案。</p>
+                        </div>
+                        <div class="modal-section">
+                            <h3>特点</h3>
+                            <ul class="modal-list">
+                                <li>保护期最长，为20年</li>
+                                <li>审查最为严格，需要经过实质审查</li>
+                                <li>保护力度最强，保护范围最广</li>
+                                <li>申请周期较长，通常需要2-3年</li>
+                            </ul>
+                        </div>
+                        <div class="modal-section">
+                            <h3>申请要求</h3>
+                            <ul class="modal-list">
+                                <li>具有新颖性、创造性和实用性</li>
+                                <li>技术方案必须充分公开</li>
+                                <li>权利要求书必须清楚、简要</li>
+                                <li>说明书必须对发明作出清楚、完整的说明</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                utility: {
+                    title: '实用新型专利',
+                    content: `
+                        <div class="modal-section">
+                            <h3>定义</h3>
+                            <p>实用新型专利是指对产品的形状、构造或者其结合所提出的适于实用的新的技术方案。</p>
+                        </div>
+                        <div class="modal-section">
+                            <h3>特点</h3>
+                            <ul class="modal-list">
+                                <li>保护期为10年</li>
+                                <li>审查周期较短，通常为6-12个月</li>
+                                <li>只进行形式审查，不进行实质审查</li>
+                                <li>保护范围限于产品的形状、构造</li>
+                            </ul>
+                        </div>
+                        <div class="modal-section">
+                            <h3>申请要求</h3>
+                            <ul class="modal-list">
+                                <li>必须是产品的形状、构造或其结合</li>
+                                <li>必须具有实用性</li>
+                                <li>技术方案相对简单</li>
+                                <li>申请文件要求相对较低</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                design: {
+                    title: '外观设计专利',
+                    content: `
+                        <div class="modal-section">
+                            <h3>定义</h3>
+                            <p>外观设计专利是指对产品的形状、图案或者其结合以及色彩与形状、图案的结合所作出的富有美感并适于工业应用的新设计。</p>
+                        </div>
+                        <div class="modal-section">
+                            <h3>特点</h3>
+                            <ul class="modal-list">
+                                <li>保护期为15年</li>
+                                <li>审查周期最短，通常为3-6个月</li>
+                                <li>保护的是产品的外观设计</li>
+                                <li>不保护技术功能</li>
+                            </ul>
+                        </div>
+                        <div class="modal-section">
+                            <h3>申请要求</h3>
+                            <ul class="modal-list">
+                                <li>必须是对产品外观的设计</li>
+                                <li>必须富有美感</li>
+                                <li>必须适于工业应用</li>
+                                <li>必须具有新颖性</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                international: {
+                    title: '国际专利申请',
+                    content: `
+                        <div class="modal-section">
+                            <h3>定义</h3>
+                            <p>国际专利申请是指通过PCT（专利合作条约）途径在多个国家申请专利保护。</p>
+                        </div>
+                        <div class="modal-section">
+                            <h3>特点</h3>
+                            <ul class="modal-list">
+                                <li>一次申请，多国保护</li>
+                                <li>申请流程相对简化</li>
+                                <li>有30个月的时间决定进入哪些国家</li>
+                                <li>费用相对较高</li>
+                            </ul>
+                        </div>
+                        <div class="modal-section">
+                            <h3>申请流程</h3>
+                            <ul class="modal-list">
+                                <li>提交国际申请</li>
+                                <li>国际检索</li>
+                                <li>国际公布</li>
+                                <li>进入国家阶段</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                search: {
+                    title: '专利检索工具',
+                    content: `
+                        <div class="modal-section">
+                            <h3>常用检索平台</h3>
+                            <ul class="modal-list">
+                                <li>国家知识产权局专利检索系统</li>
+                                <li>中国专利公布公告系统</li>
+                                <li>专利之星检索系统</li>
+                                <li>SooPAT专利检索</li>
+                                <li>Google专利搜索</li>
+                            </ul>
+                        </div>
+                        <div class="modal-section">
+                            <h3>检索技巧</h3>
+                            <ul class="modal-list">
+                                <li>使用关键词组合检索</li>
+                                <li>利用IPC分类号精确检索</li>
+                                <li>关注相关专利的引证信息</li>
+                                <li>分析竞争对手的专利布局</li>
+                            </ul>
+                        </div>
+                        <div class="modal-section">
+                            <h3>检索目的</h3>
+                            <ul class="modal-list">
+                                <li>评估专利申请的新颖性</li>
+                                <li>了解技术发展现状</li>
+                                <li>避免专利侵权风险</li>
+                                <li>寻找技术合作机会</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                materials: {
+                    title: '专利申请材料清单',
+                    content: `
+                        <div class="modal-section">
+                            <h3>必需材料</h3>
+                            <ul class="modal-list">
+                                <li>专利请求书</li>
+                                <li>说明书（包括技术领域、背景技术、发明内容、附图说明、具体实施方式）</li>
+                                <li>权利要求书</li>
+                                <li>说明书摘要</li>
+                                <li>说明书附图（如有）</li>
+                                <li>申请人身份证明文件</li>
+                            </ul>
+                        </div>
+                        <div class="modal-section">
+                            <h3>特殊材料</h3>
+                            <ul class="modal-list">
+                                <li>优先权证明文件（如要求优先权）</li>
+                                <li>生物材料保藏证明（如涉及生物材料）</li>
+                                <li>遗传资源来源披露登记表（如涉及遗传资源）</li>
+                                <li>委托书（如委托专利代理机构）</li>
+                            </ul>
+                        </div>
+                        <div class="modal-section">
+                            <h3>注意事项</h3>
+                            <ul class="modal-list">
+                                <li>所有文件必须使用中文</li>
+                                <li>附图必须清晰，线条均匀</li>
+                                <li>权利要求书必须清楚、简要</li>
+                                <li>说明书必须充分公开技术方案</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                examination: {
+                    title: '专利审查流程',
+                    content: `
+                        <div class="modal-section">
+                            <h3>发明专利审查流程</h3>
+                            <ul class="modal-list">
+                                <li>受理（1-3个工作日）</li>
+                                <li>初步审查（3-6个月）</li>
+                                <li>公布（申请日后18个月）</li>
+                                <li>实质审查（2-3年）</li>
+                                <li>授权（通过审查后）</li>
+                            </ul>
+                        </div>
+                        <div class="modal-section">
+                            <h3>实用新型/外观设计审查流程</h3>
+                            <ul class="modal-list">
+                                <li>受理（1-3个工作日）</li>
+                                <li>初步审查（6-12个月）</li>
+                                <li>授权（通过审查后）</li>
+                            </ul>
+                        </div>
+                        <div class="modal-section">
+                            <h3>审查内容</h3>
+                            <ul class="modal-list">
+                                <li>形式审查：文件格式、完整性</li>
+                                <li>实质审查：新颖性、创造性、实用性</li>
+                                <li>合法性审查：是否符合专利法规定</li>
+                                <li>单一性审查：是否属于一个总的发明构思</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                faq: {
+                    title: '专利申请常见问题',
+                    content: `
+                        <div class="modal-section">
+                            <h3>常见问题</h3>
+                            <ul class="modal-list">
+                                <li><strong>Q: 专利保护范围是什么？</strong><br>A: 专利保护的是技术方案，包括产品、方法或其改进。</li>
+                                <li><strong>Q: 专利申请需要多长时间？</strong><br>A: 发明专利2-3年，实用新型6-12个月，外观设计3-6个月。</li>
+                                <li><strong>Q: 专利有效期是多久？</strong><br>A: 发明专利20年，实用新型10年，外观设计15年。</li>
+                                <li><strong>Q: 专利可以转让吗？</strong><br>A: 可以，需办理专利权转让登记。</li>
+                                <li><strong>Q: 专利申请被驳回怎么办？</strong><br>A: 可在收到驳回决定后3个月内请求复审。</li>
+                                <li><strong>Q: 专利年费如何缴纳？</strong><br>A: 授权后每年需要缴纳年费，费用逐年递增。</li>
+                            </ul>
+                        </div>
+                    `
+                }
+            };
+            
+            // 点击查看详情按钮打开弹窗
+            document.querySelectorAll('[data-modal]').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const modalId = this.getAttribute('data-modal');
+                    
+                    if (modalContents[modalId]) {
+                        modalTitle.textContent = modalContents[modalId].title;
+                        modalBody.innerHTML = modalContents[modalId].content;
+                        modal.classList.add('active');
+                    }
+                });
+            });
+            
+            // 关闭弹窗
+            function closeModal() {
+                modal.classList.remove('active');
+            }
+            
+            closeBtn.addEventListener('click', closeModal);
+            footerBtn.addEventListener('click', closeModal);
+            
+            // 点击弹窗外部关闭
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+            
+            // ESC键关闭弹窗
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modal.classList.contains('active')) {
+                    closeModal();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

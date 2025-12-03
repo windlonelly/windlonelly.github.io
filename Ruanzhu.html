@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>软件著作权申请指南 - 河北科技大学学习辅助平台</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="quote-fall-container" id="quoteContainer"></div>
+    <header>
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="./index.html" class="logo">
+                    <img src="./images/logo.png" alt="河北科技大学学习辅助平台">
+                </a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">首页 <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="index.html#competitions" class="dropdown-item"><i class="fas fa-trophy"></i> 竞赛等级</a>
+                            <a href="index.html#features" class="dropdown-item"><i class="fas fa-star"></i> 功能特色</a>
+                            <a href="index.html#quick-access" class="dropdown-item"><i class="fas fa-link"></i> 快速链接</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./DYC1.html" class="nav-link">竞赛 <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="A.html" class="dropdown-item"><i class="fas fa-trophy"></i> A级比赛</a>
+                            <a href="B.html" class="dropdown-item"><i class="fas fa-medal"></i> B级比赛</a>
+                            <a href="C.html" class="dropdown-item"><i class="fas fa-award"></i> C级比赛</a>
+                            <a href="D.html" class="dropdown-item"><i class="fas fa-certificate"></i> D级比赛</a>
+                            <a href="time.html" class="dropdown-item"><i class="fas fa-calendar-alt"></i> 比赛日历</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Ruanzhu.html" class="nav-link">软著</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Zhuanli.html" class="nav-link">专利</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Lunwen.html" class="nav-link">论文</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Huodong.html" class="nav-link">事件 <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="Huodong.html" class="dropdown-item"><i class="fas fa-calendar-day"></i> 活动日历</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Kecheng.html" class="nav-link">课程</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./jiaoliu.html" class="nav-link active">交流平台</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./fankui.html" class="nav-link">反馈</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="header-banner">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+            <h1>软件著作权申请指南</h1>
+            <p>了解软件著作权的基本概念、申请流程和注意事项，为您的软件作品提供法律保护</p>
+        </div>
+    </div>
+
+    <!-- 软著类型分布 -->
+    <section class="competition-levels fade-in-section">
+        <div class="container">
+            <h2>软著类型分布</h2>
+            <p class="section-desc">了解不同类型的软件著作权及其特点，根据您的软件类型选择合适的申请策略</p>
+            <div class="levels-container">
+                <div class="level-card">
+                    <img src="./images/g1.webp" alt="原创软件" class="level-img">
+                    <div class="level-content">
+                        <span class="level-badge badge-a">原创软件</span>
+                        <h3 class="level-title">原创软件著作权</h3>
+                        <p class="level-desc">完全由申请人独立开发的软件，具有较高的独创性和创新性，保护范围最广。</p>
+                        <a href="#original" class="level-btn" data-modal="original">查看详情</a>
+                    </div>
+                </div>
+                <div class="level-card">
+                    <img src="./images/g2.webp" alt="改编软件" class="level-img">
+                    <div class="level-content">
+                        <span class="level-badge badge-b">改编软件</span>
+                        <h3 class="level-title">改编软件著作权</h3>
+                        <p class="level-desc">在原有软件基础上进行修改、翻译或注释形成的软件，需获得原著作权人授权。</p>
+                        <a href="#adapted" class="level-btn" data-modal="adapted">查看详情</a>
+                    </div>
+                </div>
+                <div class="level-card">
+                    <img src="./images/g3.webp" alt="合作软件" class="level-img">
+                    <div class="level-content">
+                        <span class="level-badge badge-c">合作软件</span>
+                        <h3 class="level-title">合作软件著作权</h3>
+                        <p class="level-desc">由两个或多个开发者共同完成的软件，著作权由所有合作开发者共同享有。</p>
+                        <a href="#collaborative" class="level-btn" data-modal="collaborative">查看详情</a>
+                    </div>
+                </div>
+                <div class="level-card">
+                    <img src="./images/g4.webp" alt="职务软件" class="level-img">
+                    <div class="level-content">
+                        <span class="level-badge badge-d">职务软件</span>
+                        <h3 class="level-title">职务软件著作权</h3>
+                        <p class="level-desc">在单位任职期间完成的软件，著作权归属需根据劳动合同或单位规定确定。</p>
+                        <a href="#employment" class="level-btn" data-modal="employment">查看详情</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 申请流程 -->
+    <section class="platform-features fade-in-section">
+        <div class="container">
+            <h2>软著申请流程</h2>
+            <p class="section-desc">了解软件著作权申请的详细步骤和所需材料，确保申请过程顺利进行</p>
+            <div class="features-container">
+                <div class="feature-card">
+                    <img src="./images/g5.webp" alt="材料准备" class="feature-img">
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3 class="feature-title">材料准备</h3>
+                        <p class="feature-desc">准备软件著作权申请表、软件源代码、软件说明书、申请人身份证明等必要材料。</p>
+                        <a href="#materials" class="feature-btn" data-modal="materials">查看材料清单</a>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <img src="./images/g6.webp" alt="在线申请" class="feature-img">
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3 class="feature-title">在线申请</h3>
+                        <p class="feature-desc">通过国家版权局官方网站或中国版权保护中心进行在线申请，填写相关信息。</p>
+                        <a href="https://www.ccopyright.com.cn/" class="feature-btn" target="_blank">申请入口</a>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <img src="./images/g7.webp" alt="审查与发证" class="feature-img">
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3 class="feature-title">审查与发证</h3>
+                        <p class="feature-desc">版权局对申请材料进行审查，通过后颁发软件著作权登记证书，全程约30-60个工作日。</p>
+                        <a href="#examination" class="feature-btn" data-modal="examination">查看时间</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 视频教程 -->
+    <section class="video-resources fade-in-section">
+        <div class="container">
+            <h2>软著申请视频教程</h2>
+            <p class="section-desc">精选软著申请相关视频教程，帮助您了解申请流程、材料准备和常见问题</p>
+            <div class="video-container">
+                <div class="video-card">
+                    <div class="video-player">
+                        <video src="images/21.mp4" controls loop></video>
+                    </div>
+                    <div class="video-content">
+                        <h3 class="video-title">软著申请全流程详解</h3>
+                        <p class="video-desc">详细讲解软著申请的每个步骤，从材料准备到在线申请，再到审查发证的全过程。</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 2.3k 观看</span>
+                            <span><i class="far fa-clock"></i> 1周前</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-player">
+                        <video src="images/22.mp4" controls loop></video>
+                    </div>
+                    <div class="video-content">
+                        <h3 class="video-title">软著材料准备技巧</h3>
+                        <p class="video-desc">分享软著申请材料准备的技巧和注意事项，避免常见错误，提高申请成功率。</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 1.8k 观看</span>
+                            <span><i class="far fa-clock"></i> 2周前</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-player">
+                        <video src="images/23.mp4" controls loop></video>
+                    </div>
+                    <div class="video-content">
+                        <h3 class="video-title">软著常见问题解答</h3>
+                        <p class="video-desc">解答软著申请过程中常见的疑问和问题，帮助您顺利完成申请。</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 1.5k 观看</span>
+                            <span><i class="far fa-clock"></i> 3周前</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-player">
+                        <video src="images/24.mp4" controls loop></video>
+                    </div>
+                    <div class="video-content">
+                        <h3 class="video-title">软著与专利申请的区别</h3>
+                        <p class="video-desc">比较软著与专利申请的区别，帮助您选择最适合的知识产权保护方式。</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 2.1k 观看</span>
+                            <span><i class="far fa-clock"></i> 1月前</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 快速链接 -->
+    <section class="quick-access fade-in-section">
+        <div class="container">
+            <h2>相关资源</h2>
+            <p class="section-desc">快速访问软著申请相关资源和工具，提高申请效率</p>
+            <div class="access-container">
+                <div class="access-card">
+                    <div class="access-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3 class="access-title">申请表格下载</h3>
+                    <p class="access-desc">下载软著申请所需的各种表格和模板，包括申请表、说明书模板等。</p>
+                    <a href="https://www.ccopyright.com.cn" class="access-btn" target="_blank">下载资源</a>
+                </div>
+                <div class="access-card">
+                    <div class="access-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3 class="access-title">常见问题解答</h3>
+                    <p class="access-desc">查看软著申请过程中常见问题的解答，解决您的疑惑。</p>
+                    <a href="#faq" class="access-btn" data-modal="faq">查看FAQ</a>
+                </div>
+                <div class="access-card">
+                    <div class="access-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="access-title">政策法规</h3>
+                    <p class="access-desc">了解与软件著作权相关的法律法规和政策文件。</p>
+                    <a href="http://www.ncac.gov.cn/" class="access-btn" target="_blank">查看法规</a>
+                </div>
+                <div class="access-card">
+                    <div class="access-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="access-title">在线课程</h3>
+                    <p class="access-desc">学习软著申请相关的在线课程，提升申请技能。</p>
+                    <a href="https://www.icourse163.org/" class="access-btn" target="_blank">学习课程</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>关于我们</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 学校简介</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 领导团队</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 组织机构</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 校园文化</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>招生信息</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 本科生招生</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 研究生招生</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 留学生招生</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 继续教育</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>校园生活</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 学生活动</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 社团组织</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 校园服务</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 住宿信息</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>联系我们</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> 河北省石家庄市裕华区裕翔街26号</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> 0311-81668111</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> webmaster@hebust.edu.cn</a></li>
+                        <li><a href="#"><i class="fas fa-globe"></i> www.hebust.edu.cn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 河北科技大学 版权所有 | 冀ICP备05002802号</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 弹窗区域 -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">弹窗标题</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button class="modal-btn">关闭</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/myjj.js"></script>
+    <script>
+        function initScrollAnimation() {
+            const fadeSections = document.querySelectorAll('.fade-in-section');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+            
+            fadeSections.forEach(section => {
+                observer.observe(section);
+            });
+        }
+
+        // 弹窗功能
+        document.addEventListener('DOMContentLoaded', function() {
+            initScrollAnimation();
+            
+            const modal = document.getElementById('modal');
+            const modalTitle = modal.querySelector('.modal-title');
+            const modalBody = modal.querySelector('.modal-body');
+            const closeBtn = modal.querySelector('.modal-close');
+            const footerBtn = modal.querySelector('.modal-btn');
+            
+            // 弹窗内容数据
+            const modalContents = {
+                original: {
+                    title: '原创软件著作权',
+                    content: `
+                        <div class="modal-section">
+                            <h3>定义</h3>
+                            <p>原创软件著作权是指完全由申请人独立开发的软件，不依赖于任何已有软件或代码库。</p>
+                        </div>
+                        <div class="modal-section">
+                            <h3>特点</h3>
+                            <ul class="modal-list">
+                                <li>具有较高的独创性和创新性</li>
+                                <li>保护范围最广</li>
+                                <li>申请成功率相对较高</li>
+                                <li>无需获得他人授权</li>
+                            </ul>
+                        </div>
+                        <div class="modal-section">
+                            <h3>申请要求</h3>
+                            <ul class="modal-list">
+                                <li>软件必须具有独创性</li>
+                                <li>需提供完整的源代码</li>
+                                <li>软件说明书需详细描述功能和使用方法</li>
+                                <li>申请人需提供身份证明</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                adapted: {
+                    title: '改编软件著作权',
+                    content: `
+                        <div class="modal-section">
+                            <h3>定义</h3>
+                            <p>改编软件著作权是指在原有软件基础上进行修改、翻译或注释形成的软件。</p>
+                        </div>
+                        <div class="modal-section">
+                            <h3>特点</h3>
+                            <ul class="modal-list">
+                                <li>基于已有软件进行二次开发</li>
+                                <li>需获得原著作权人授权</li>
+                                <li>保护范围限于改编部分</li>
+                                <li>需提供原软件授权证明</li>
+                            </ul>
+                        </div>
+                        <div class="modal-section">
+                            <h3>申请要求</h3>
+                            <ul class="modal-list">
+                                <li>提供原软件著作权证明</li>
+                                <li>提供原著作权人授权书</li>
+                                <li>明确标注改编部分</li>
+                                <li>提供改编前后的代码对比</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                collaborative: {
+                    title: '合作软件著作权',
+                    content: `
+                        <div class="modal-section">
+                            <h3>定义</h3>
+                            <p>合作软件著作权是指由两个或多个开发者共同完成的软件。</p>
+                        </div>
+                        <div class="modal-section">
+                            <h3>特点</h3>
+                            <ul class="modal-list">
+                                <li>著作权由所有合作开发者共同享有</li>
+                                <li>需明确各开发者贡献比例</li>
+                                <li>可协商确定权利行使方式</li>
+                                <li>需提供所有开发者身份证明</li>
+                            </ul>
+                        </div>
+                        <div class="modal-section">
+                            <h3>申请要求</h3>
+                            <ul class="modal-list">
+                                <li>提供所有开发者身份证明</li>
+                                <li>签署合作开发协议</li>
+                                <li>明确各开发者贡献部分</li>
+                                <li>协商确定权利行使方式</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                employment: {
+                    title: '职务软件著作权',
+                    content: `
+                        <div class="modal-section">
+                            <h3>定义</h3>
+                            <p>职务软件著作权是指在单位任职期间完成的软件。</p>
+                        </div>
+                        <div class="modal-section">
+                            <h3>特点</h3>
+                            <ul class="modal-list">
+                                <li>著作权归属需根据劳动合同或单位规定确定</li>
+                                <li>通常著作权归单位所有</li>
+                                <li>开发者享有署名权</li>
+                                <li>单位可给予开发者奖励</li>
+                            </ul>
+                        </div>
+                        <div class="modal-section">
+                            <h3>申请要求</h3>
+                            <ul class="modal-list">
+                                <li>提供单位营业执照</li>
+                                <li>提供劳动合同或单位规定</li>
+                                <li>提供开发者身份证明</li>
+                                <li>单位出具职务作品证明</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                materials: {
+                    title: '软著申请材料清单',
+                    content: `
+                        <div class="modal-section">
+                            <h3>必需材料</h3>
+                            <ul class="modal-list">
+                                <li>软件著作权申请表（在线填写并打印）</li>
+                                <li>软件源代码（前30页和后30页，每页50行）</li>
+                                <li>软件说明书（功能说明、使用说明等）</li>
+                                <li>申请人身份证明（个人身份证或企业营业执照）</li>
+                            </ul>
+                        </div>
+                        <div class="modal-section">
+                            <h3>可选材料</h3>
+                            <ul class="modal-list">
+                                <li>软件界面截图</li>
+                                <li>软件功能演示视频</li>
+                                <li>软件测试报告</li>
+                                <li>其他相关证明材料</li>
+                            </ul>
+                        </div>
+                        <div class="modal-section">
+                            <h3>注意事项</h3>
+                            <ul class="modal-list">
+                                <li>所有材料需使用A4纸打印</li>
+                                <li>源代码需包含必要的注释</li>
+                                <li>说明书需详细描述软件功能</li>
+                                <li>身份证明需清晰可辨</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                examination: {
+                    title: '软著审查时间与流程',
+                    content: `
+                        <div class="modal-section">
+                            <h3>审查流程</h3>
+                            <ul class="modal-list">
+                                <li>形式审查（1-3个工作日）</li>
+                                <li>受理通知（5-10个工作日）</li>
+                                <li>实质审查（20-40个工作日）</li>
+                                <li>发证（5-10个工作日）</li>
+                            </ul>
+                        </div>
+                        <div class="modal-section">
+                            <h3>总时长</h3>
+                            <p>软著申请全程约30-60个工作日，具体时间视申请量和审查情况而定。</p>
+                        </div>
+                        <div class="modal-section">
+                            <h3>加急服务</h3>
+                            <p>部分代理机构提供加急服务，可将审查时间缩短至5-15个工作日，但需额外支付加急费用。</p>
+                        </div>
+                    `
+                },
+                faq: {
+                    title: '软著申请常见问题',
+                    content: `
+                        <div class="modal-section">
+                            <h3>常见问题</h3>
+                            <ul class="modal-list">
+                                <li><strong>Q: 软著保护范围是什么？</strong><br>A: 软著保护的是软件的表达形式，包括源代码和目标代码，但不保护软件的思想、算法和处理过程。</li>
+                                <li><strong>Q: 软著申请需要多长时间？</strong><br>A: 正常流程需要30-60个工作日，加急服务可缩短至5-15个工作日。</li>
+                                <li><strong>Q: 软著有效期是多久？</strong><br>A: 自然人终身加50年，法人或其他组织为50年。</li>
+                                <li><strong>Q: 软著可以转让吗？</strong><br>A: 可以，需办理著作权转让登记。</li>
+                                <li><strong>Q: 软著申请被驳回怎么办？</strong><br>A: 可根据驳回理由修改材料后重新申请。</li>
+                            </ul>
+                        </div>
+                    `
+                }
+            };
+            
+            // 点击查看详情按钮打开弹窗
+            document.querySelectorAll('[data-modal]').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const modalId = this.getAttribute('data-modal');
+                    
+                    if (modalContents[modalId]) {
+                        modalTitle.textContent = modalContents[modalId].title;
+                        modalBody.innerHTML = modalContents[modalId].content;
+                        modal.classList.add('active');
+                    }
+                });
+            });
+            
+            // 关闭弹窗
+            function closeModal() {
+                modal.classList.remove('active');
+            }
+            
+            closeBtn.addEventListener('click', closeModal);
+            footerBtn.addEventListener('click', closeModal);
+            
+            // 点击弹窗外部关闭
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+            
+            // ESC键关闭弹窗
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modal.classList.contains('active')) {
+                    closeModal();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

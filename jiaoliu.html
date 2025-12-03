@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交流平台 - 河北科技大学学习辅助平台</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="quote-fall-container" id="quoteContainer"></div>
+
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="./index.html" class="logo">
+                    <img src="./images/logo.png" alt="河北科技大学学习辅助平台">
+                </a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">首页 <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="index.html#competitions" class="dropdown-item"><i class="fas fa-trophy"></i> 竞赛等级</a>
+                            <a href="index.html#features" class="dropdown-item"><i class="fas fa-star"></i> 功能特色</a>
+                            <a href="index.html#quick-access" class="dropdown-item"><i class="fas fa-link"></i> 快速链接</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./DYC1.html" class="nav-link">竞赛 <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="A.html" class="dropdown-item"><i class="fas fa-trophy"></i> A级比赛</a>
+                            <a href="B.html" class="dropdown-item"><i class="fas fa-medal"></i> B级比赛</a>
+                            <a href="C.html" class="dropdown-item"><i class="fas fa-award"></i> C级比赛</a>
+                            <a href="D.html" class="dropdown-item"><i class="fas fa-certificate"></i> D级比赛</a>
+                            <a href="time.html" class="dropdown-item"><i class="fas fa-calendar-alt"></i> 比赛日历</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Ruanzhu.html" class="nav-link">软著</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Zhuanli.html" class="nav-link">专利</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Lunwen.html" class="nav-link">论文</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Huodong.html" class="nav-link">事件 <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="Huodong.html" class="dropdown-item"><i class="fas fa-calendar-day"></i> 活动日历</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Kecheng.html" class="nav-link">课程</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./jiaoliu.html" class="nav-link active">交流平台</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./fankui.html" class="nav-link">反馈</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- 页面头部 -->
+    <div class="header-banner">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+            <h1>交流平台</h1>
+            <p>与同学们一起讨论竞赛经验、分享学习资源、寻找合作伙伴，共同进步</p>
+        </div>
+    </div>
+
+    <!-- 主体内容 -->
+    <div class="container">
+        <!-- <div class="page-header">
+            <h2>学术交流与讨论</h2>
+            <p>在这里您可以与同学们交流竞赛经验、分享学习资源、寻找合作伙伴，共同进步。请选择合适的标签发布内容，方便他人快速找到相关信息。</p>
+        </div> -->
+
+        <!-- 交流平台主容器 -->
+        <div class="discussion-platform">
+            <!-- 左侧讨论区 -->
+            <div class="discussion-main">
+                <!-- 发布区域 -->
+                <div class="post-section fade-in-section">
+                    <div class="post-header">
+                        <h3><i class="fas fa-edit"></i> 发布新内容</h3>
+                    </div>
+                    <div class="post-form">
+                        <div class="tag-selection">
+                            <div class="tag-group">
+                                <label>选择模块：</label>
+                                <div class="tag-options">
+                                    <button class="tag-btn active" data-type="competition">比赛</button>
+                                    <button class="tag-btn" data-type="soft">软著</button>
+                                    <button class="tag-btn" data-type="patent">专利</button>
+                                    <button class="tag-btn" data-type="paper">论文</button>
+                                </div>
+                            </div>
+                            <div class="tag-group competition-subtags">
+                                <label>选择比赛：</label>
+                                <select class="competition-select">
+                                    <option value="">请选择具体比赛</option>
+                                    <!-- A级比赛 -->
+                                    <optgroup label="A级比赛">
+                                        <option value="a1">中国国际大学生创新大赛</option>
+                                    </optgroup>
+                                    <!-- B级比赛 -->
+                                    <optgroup label="B级比赛">
+                                        <option value="b1">"挑战杯"全国大学生课外学术科技作品竞赛</option>
+                                        <option value="b2">"挑战杯"中国大学生创业计划大赛</option>
+                                    </optgroup>
+                                    <!-- C级比赛 -->
+                                    <optgroup label="C级比赛">
+                                        <option value="c1">全国大学生数学建模竞赛</option>
+                                        <option value="c2">全国大学生电子设计竞赛</option>
+                                        <option value="c3">全国大学生机械创新设计大赛</option>
+                                        <option value="c4">全国大学生结构设计竞赛</option>
+                                        <option value="c5">全国大学生广告艺术大赛</option>
+                                        <option value="c6">全国大学生智能汽车竞赛</option>
+                                        <option value="c7">全国大学生电子商务"创新、创意及创业"挑战赛</option>
+                                        <option value="c8">中国大学生工程实践与创新能力大赛</option>
+                                        <option value="c9">全国大学生物流设计大赛</option>
+                                        <option value="c10">全国大学生创新创业训练计划年会展示</option>
+                                        <option value="c11">全国大学生机器人大赛</option>
+                                        <option value="c12">"西门子杯"中国智能制造挑战赛</option>
+                                        <option value="c13">中国大学生服务外包创新创业大赛</option>
+                                        <option value="c14">中美青年创客大赛</option>
+                                        <option value="c15">全国大学生物理实验竞赛</option>
+                                        <option value="c16">全国大学生节能减排社会实践与科技竞赛</option>
+                                        <option value="c17">中华经典诵写讲大赛</option>
+                                        <option value="c18">全国大学生职业规划大赛</option>
+                                        <option value="c19">全国学生"学宪法 讲宪法"活动</option>
+                                        <option value="c20">ACM-ICPC国际大学生程序设计竞赛</option>
+                                    </optgroup>
+                                    <!-- D级比赛 -->
+                                    <optgroup label="D级比赛">
+                                        <option value="d1">中国国际飞行器设计挑战赛</option>
+                                        <option value="d2">外研社全国大学生英语系列赛</option>
+                                        <option value="d3">两岸新锐设计竞赛·华灿奖</option>
+                                        <option value="d4">全国大学生化工设计竞赛</option>
+                                        <option value="d5">全国大学生市场调查与分析大赛</option>
+                                        <option value="d6">全国大学生先进成图技术与产品信息建模创新大赛</option>
+                                        <option value="d7">全国三维数字化创新设计大赛</option>
+                                        <option value="d8">中国大学生计算机设计大赛</option>
+                                        <option value="d9">中国高校计算机大赛</option>
+                                        <option value="d10">米兰设计周--中国高校设计学科师生优秀作品展</option>
+                                        <option value="d11">全国大学生地质技能竞赛</option>
+                                        <option value="d12">全国大学生光电设计竞赛</option>
+                                        <option value="d13">全国大学生集成电路创新创业大赛</option>
+                                        <option value="d14">全国大学生金相技能大赛</option>
+                                        <option value="d15">全国大学生信息安全竞赛</option>
+                                        <option value="d16">未来设计师·全国高校数字艺术设计大赛</option>
+                                        <option value="d17">全国周培源大学生力学竞赛</option>
+                                        <option value="d18">中国大学生机械工程创新创意大赛</option>
+                                        <option value="d19">中国机器人大赛暨RoboCup机器人世界杯中国赛</option>
+                                        <option value="d20">"中国软件杯"大学生软件设计大赛</option>
+                                        <option value="d21">睿抗机器人开发者大赛（RAICOM）</option>
+                                        <option value="d22">"大唐杯"全国大学生新一代信息通信技术大赛</option>
+                                        <option value="d23">华为ICT大赛</option>
+                                        <option value="d24">----------------</option>
+                                        <option value="d25">全国大学生嵌入式芯片与系统设计竞赛</option>
+                                        <option value="d26">全国大学生生命科学竞赛（GULSC）</option>
+                                        <option value="d27">全国高校BIM毕业设计创新大赛</option>
+                                        <option value="d28">全国高校商业精英挑战赛</option>
+                                        <option value="d29">"学创杯"全国大学生创业综合模拟大赛</option>
+                                        <option value="d30">中国高校智能机器人创意大赛</option>
+                                        <option value="d31">中国好创意暨全国数字艺术设计大赛</option>
+                                        <option value="d32">中国机器人及人工智能大赛</option>
+                                        <option value="d33">"21世纪杯"全国英语演讲比赛</option>
+                                        <option value="d34">iCAN大学生创新创业大赛</option>
+                                        <option value="d35">"工行杯"全国大学生金融科技创新大赛</option>
+                                        <option value="d36">"外教社杯"全国高校学生跨文化能力大赛</option>
+                                        <option value="d37">百度之星·程序设计大赛</option>
+                                        <option value="d38">全国大学生工业设计大赛</option>
+                                        <option value="d39">全国大学生水利创新设计大赛</option>
+                                        <option value="d40">全国大学生化工实验大赛</option>
+                                        <option value="d41">全国大学生化学实验创新设计大赛</option>
+                                        <option value="d42">全国大学生计算机系统能力大赛</option>
+                                        <option value="d43">全国大学生花园设计建造竞赛</option>
+                                        <option value="d44">全国大学生物联网设计竞赛</option>
+                                        <option value="d45">全国大学生信息安全与对抗技术竞赛</option>
+                                        <option value="d46">全国大学生测绘学科创新创业智能大赛</option>
+                                        <option value="d47">全国大学生统计建模大赛</option>
+                                        <option value="d48">全国大学生能源经济学术创意大赛</option>
+                                        <option value="d49">全国大学生数字媒体科技作品及创意竞赛</option>
+                                        <option value="d50">全国本科院校税收风险管控案例大赛</option>
+                                        <option value="d51">全国企业竞争模拟大赛</option>
+                                        <option value="d52">全国高等院校数智化企业经营沙盘大赛</option>
+                                        <option value="d53">全国数字建筑创新应用大赛</option>
+                                        <option value="d54">全球校园人工智能算法精英大赛</option>
+                                        <option value="d55">国际大学生智能农业装备创新大赛</option>
+                                        <option value="d56">"科云杯"全国大学生财会职业能力大赛</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="tag-group competition-subtags">
+                                <label>选择类型：</label>
+                                <div class="tag-options">
+                                    <button class="subtag-btn active" data-subtype="qna">答疑解惑</button>
+                                    <button class="subtag-btn" data-subtype="team">组队</button>
+                                    <button class="subtag-btn" data-subtype="resource">资源分享</button>
+                                    <button class="subtag-btn" data-subtype="experience">经验交流</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="post-content">
+                            <textarea placeholder="请输入您想分享的内容..." class="post-textarea"></textarea>
+                            <div class="post-actions">
+                                <div class="file-upload">
+                                    <input type="file" id="file-upload" multiple accept="image/*,.pdf,.doc,.docx,.zip,.rar">
+                                    <label for="file-upload" class="upload-btn">
+                                        <i class="fas fa-paperclip"></i> 添加附件
+                                    </label>
+                                    <span class="file-info">支持图片、文档和压缩包</span>
+                                </div>
+                                <button class="submit-btn">发布</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 讨论列表 -->
+                <div class="discussion-list fade-in-section">
+                    <div class="list-header">
+                        <h3><i class="fas fa-comments"></i> 最新讨论</h3>
+                        <div class="filter-options">
+                            <select class="filter-select">
+                                <option value="all">全部内容</option>
+                                <option value="competition">比赛相关</option>
+                                <option value="soft">软著相关</option>
+                                <option value="patent">专利相关</option>
+                                <option value="paper">论文相关</option>
+                            </select>
+                            <select class="subfilter-select" id="competition-filter" style="display: none;">
+                                <option value="all">所有比赛</option>
+                                <option value="a1">中国国际大学生创新大赛</option>
+                                <option value="b1">挑战杯课外学术</option>
+                                <option value="b2">挑战杯创业计划</option>
+                                <option value="c1">数学建模竞赛</option>
+                                <option value="c2">电子设计竞赛</option>
+                                <option value="c20">ACM程序设计</option>
+                                <option value="d1">飞行器设计挑战赛</option>
+                                <option value="d2">外研社英语系列赛</option>
+                                <option value="d56">科云杯财会大赛</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="discussion-items">
+                        <!-- 示例讨论项 -->
+                        <div class="discussion-item" data-type="competition" data-competition="c1">
+                            <div class="item-header">
+                                <div class="user-info">
+                                    <img src="./images/person1.jpg" alt="用户" class="user-avatar">
+                                    <div class="user-details">
+                                        <span class="user-name">黄晓明</span>
+                                        <span class="post-time">2小时前</span>
+                                    </div>
+                                </div>
+                                <div class="item-tags">
+                                    <span class="tag competition-tag">比赛</span>
+                                    <!-- <span class="tag competition-name">数学建模竞赛</span> -->
+                                    <span class="tag subtype-tag qna-tag">答疑解惑</span>
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <p>请问数学建模竞赛中，如何选择合适的模型？有没有推荐的参考资料？最近在准备美赛，感觉模型选择很关键。</p>
+                                <div class="item-attachments">
+                                    <div class="attachment">
+                                        <i class="fas fa-file-pdf"></i>
+                                        <span>数学建模参考资料.pdf</span>
+                                    </div>
+                                    <div class="attachment">
+                                        <i class="fas fa-image"></i>
+                                        <span>模型选择流程图.png</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-actions">
+                                <button class="action-btn"><i class="far fa-thumbs-up"></i> <span>12</span></button>
+                                <button class="action-btn"><i class="far fa-comment"></i> <span>5</span></button>
+                                <button class="action-btn"><i class="far fa-bookmark"></i> 收藏</button>
+                                <button class="action-btn share-btn"><i class="fas fa-share"></i> 分享</button>
+                            </div>
+                        </div>
+
+                        <div class="discussion-item" data-type="competition" data-competition="b2">
+                            <div class="item-header">
+                                <div class="user-info">
+                                    <img src="./images/person2.jpg" alt="用户" class="user-avatar">
+                                    <div class="user-details">
+                                        <span class="user-name">李思妍</span>
+                                        <span class="post-time">5小时前</span>
+                                    </div>
+                                </div>
+                                <div class="item-tags">
+                                    <span class="tag competition-tag">比赛</span>
+                                    <!-- <span class="tag competition-name">挑战杯创业计划</span> -->
+                                    <span class="tag subtype-tag team-tag">组队</span>
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <p>寻找挑战杯创业计划大赛的队友，需要有市场营销和财务分析背景的同学，项目方向是环保科技。目前团队已有技术开发人员。</p>
+                                <div class="contact-info">
+                                    <span class="contact-label">联系方式：</span>
+                                    <span class="contact-value">微信号：lisi_2024</span>
+                                </div>
+                            </div>
+                            <div class="item-actions">
+                                <button class="action-btn"><i class="far fa-thumbs-up"></i> <span>8</span></button>
+                                <button class="action-btn"><i class="far fa-comment"></i> <span>3</span></button>
+                                <button class="action-btn"><i class="far fa-bookmark"></i> 收藏</button>
+                                <button class="action-btn share-btn"><i class="fas fa-share"></i> 分享</button>
+                            </div>
+                        </div>
+
+                        <div class="discussion-item" data-type="soft">
+                            <div class="item-header">
+                                <div class="user-info">
+                                    <img src="./images/person3.jpg" alt="用户" class="user-avatar">
+                                    <div class="user-details">
+                                        <span class="user-name">Kim</span>
+                                        <span class="post-time">1天前</span>
+                                    </div>
+                                </div>
+                                <div class="item-tags">
+                                    <span class="tag soft-tag">软著</span>
+                                    <!-- <span class="tag subtype-tag resource-tag">资源分享</span> -->
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <p>分享一个软件著作权申请的完整流程和注意事项，包括材料准备、申请时间、常见问题解答等。希望能帮助到有需要的同学。</p>
+                                <div class="item-attachments">
+                                    <div class="attachment">
+                                        <i class="fas fa-image"></i>
+                                        <span>申请流程.png</span>
+                                    </div>
+                                    <div class="attachment">
+                                        <i class="fas fa-file-word"></i>
+                                        <span>材料模板.docx</span>
+                                    </div>
+                                    <div class="attachment">
+                                        <i class="fas fa-file-pdf"></i>
+                                        <span>常见问题.pdf</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-actions">
+                                <button class="action-btn"><i class="far fa-thumbs-up"></i> <span>15</span></button>
+                                <button class="action-btn"><i class="far fa-comment"></i> <span>7</span></button>
+                                <button class="action-btn"><i class="far fa-bookmark"></i> 收藏</button>
+                                <button class="action-btn share-btn"><i class="fas fa-share"></i> 分享</button>
+                            </div>
+                        </div>
+
+                        <div class="discussion-item" data-type="competition" data-competition="c20">
+                            <div class="item-header">
+                                <div class="user-info">
+                                    <img src="./images/person2.jpg" alt="用户" class="user-avatar">
+                                    <div class="user-details">
+                                        <span class="user-name">John</span>
+                                        <span class="post-time">2天前</span>
+                                    </div>
+                                </div>
+                                <div class="item-tags">
+                                    <span class="tag competition-tag">比赛</span>
+                                    <!-- <span class="tag competition-name">ACM程序设计</span> -->
+                                    <span class="tag subtype-tag experience-tag">经验交流</span>
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <p>刚刚参加完区域赛，分享一些ACM竞赛的备战经验和比赛技巧。重点推荐几个在线评测平台和经典算法学习路线。</p>
+                                <div class="item-attachments">
+                                    <div class="attachment">
+                                        <i class="fas fa-file-pdf"></i>
+                                        <span>算法学习路线.pdf</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-actions">
+                                <button class="action-btn"><i class="far fa-thumbs-up"></i> <span>23</span></button>
+                                <button class="action-btn"><i class="far fa-comment"></i> <span>12</span></button>
+                                <button class="action-btn"><i class="far fa-bookmark"></i> 收藏</button>
+                                <button class="action-btn share-btn"><i class="fas fa-share"></i> 分享</button>
+                            </div>
+                        </div>
+                        <div class="discussion-item" data-type="patent">
+                            <div class="item-header">
+                                <div class="user-info">
+                                    <img src="./images/person1.jpg" alt="用户" class="user-avatar">
+                                    <div class="user-details">
+                                        <span class="user-name">陈合一</span>
+                                        <span class="post-time">3小时前</span>
+                                    </div>
+                                </div>
+                                <div class="item-tags">
+                                    <span class="tag patent-tag">专利</span>
+                                    <!-- <span class="tag subtype-tag qna-tag">答疑解惑</span> -->
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <p>请问实用新型专利和发明专利在申请流程上有什么区别？学校对专利申请有哪些支持政策？最近有个创新想法想申请专利。</p>
+                                <div class="item-attachments">
+                                    <div class="attachment">
+                                        <i class="fas fa-file-pdf"></i>
+                                        <span>专利申请指南.pdf</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-actions">
+                                <button class="action-btn"><i class="far fa-thumbs-up"></i> <span>9</span></button>
+                                <button class="action-btn"><i class="far fa-comment"></i> <span>4</span></button>
+                                <button class="action-btn"><i class="far fa-bookmark"></i> 收藏</button>
+                                <button class="action-btn share-btn"><i class="fas fa-share"></i> 分享</button>
+                            </div>
+                        </div>
+                        
+                        <div class="discussion-item" data-type="patent">
+                            <div class="item-header">
+                                <div class="user-info">
+                                    <img src="./images/person2.jpg" alt="用户" class="user-avatar">
+                                    <div class="user-details">
+                                        <span class="user-name">孙归元</span>
+                                        <span class="post-time">1天前</span>
+                                    </div>
+                                </div>
+                                <div class="item-tags">
+                                    <span class="tag patent-tag">专利</span>
+                                    <!-- <span class="tag subtype-tag resource-tag">资源分享</span> -->
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <p>分享一份完整的专利申请材料模板，包括说明书、权利要求书、摘要等。还有专利检索的方法和常用数据库推荐。</p>
+                                <div class="item-attachments">
+                                    <div class="attachment">
+                                        <i class="fas fa-file-word"></i>
+                                        <span>专利申请模板.docx</span>
+                                    </div>
+                                    <div class="attachment">
+                                        <i class="fas fa-file-pdf"></i>
+                                        <span>专利检索指南.pdf</span>
+                                    </div>
+                                    <div class="attachment">
+                                        <i class="fas fa-file-excel"></i>
+                                        <span>费用预算表.xlsx</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-actions">
+                                <button class="action-btn"><i class="far fa-thumbs-up"></i> <span>18</span></button>
+                                <button class="action-btn"><i class="far fa-comment"></i> <span>6</span></button>
+                                <button class="action-btn"><i class="far fa-bookmark"></i> 收藏</button>
+                                <button class="action-btn share-btn"><i class="fas fa-share"></i> 分享</button>
+                            </div>
+                        </div>
+                        
+                        <div class="discussion-item" data-type="patent">
+                            <div class="item-header">
+                                <div class="user-info">
+                                    <img src="./images/person3.jpg" alt="用户" class="user-avatar">
+                                    <div class="user-details">
+                                        <span class="user-name">周天一</span>
+                                        <span class="post-time">2天前</span>
+                                    </div>
+                                </div>
+                                <div class="item-tags">
+                                    <span class="tag patent-tag">专利</span>
+                                    <!-- <span class="tag subtype-tag experience-tag">经验交流</span> -->
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <p>刚成功申请了一项发明专利，分享整个申请过程中的经验教训。重点提醒注意权利要求书的撰写技巧和审查意见的答复策略。</p>
+                                <div class="item-attachments">
+                                    <div class="attachment">
+                                        <i class="fas fa-file-pdf"></i>
+                                        <span>审查意见答复案例.pdf</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-actions">
+                                <button class="action-btn"><i class="far fa-thumbs-up"></i> <span>25</span></button>
+                                <button class="action-btn"><i class="far fa-comment"></i> <span>15</span></button>
+                                <button class="action-btn"><i class="far fa-bookmark"></i> 收藏</button>
+                                <button class="action-btn share-btn"><i class="fas fa-share"></i> 分享</button>
+                            </div>
+                        </div>
+                        
+                        <!-- 论文相关讨论项 -->
+                        <div class="discussion-item" data-type="paper">
+                            <div class="item-header">
+                                <div class="user-info">
+                                    <img src="./images/person3.jpg" alt="用户" class="user-avatar">
+                                    <div class="user-details">
+                                        <span class="user-name">Tom</span>
+                                        <span class="post-time">4小时前</span>
+                                    </div>
+                                </div>
+                                <div class="item-tags">
+                                    <span class="tag paper-tag">论文</span>
+                                    <!-- <span class="tag subtype-tag qna-tag">答疑解惑</span> -->
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <p>请问SCI论文投稿需要注意哪些事项？如何选择合适的期刊？审稿周期一般多长？第一次投稿比较紧张，求指导。</p>
+                                <div class="contact-info">
+                                    <span class="contact-label">研究方向：</span>
+                                    <span class="contact-value">人工智能与机器学习</span>
+                                </div>
+                            </div>
+                            <div class="item-actions">
+                                <button class="action-btn"><i class="far fa-thumbs-up"></i> <span>7</span></button>
+                                <button class="action-btn"><i class="far fa-comment"></i> <span>3</span></button>
+                                <button class="action-btn"><i class="far fa-bookmark"></i> 收藏</button>
+                                <button class="action-btn share-btn"><i class="fas fa-share"></i> 分享</button>
+                            </div>
+                        </div>
+                        
+                        <div class="discussion-item" data-type="paper">
+                            <div class="item-header">
+                                <div class="user-info">
+                                    <img src="./images/person2.jpg" alt="用户" class="user-avatar">
+                                    <div class="user-details">
+                                        <span class="user-name">Mike</span>
+                                        <span class="post-time">6小时前</span>
+                                    </div>
+                                </div>
+                                <div class="item-tags">
+                                    <span class="tag paper-tag">论文</span>
+                                    <!-- <span class="tag subtype-tag resource-tag">资源分享</span> -->
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <p>分享一些优质的论文写作工具和资源，包括文献管理软件、图表绘制工具、英语润色服务等。还有几个免费的查重平台推荐。</p>
+                                <div class="item-attachments">
+                                    <div class="attachment">
+                                        <i class="fas fa-file-pdf"></i>
+                                        <span>论文写作工具清单.pdf</span>
+                                    </div>
+                                    <div class="attachment">
+                                        <i class="fas fa-file-word"></i>
+                                        <span>LaTeX模板.docx</span>
+                                    </div>
+                                    <div class="attachment">
+                                        <i class="fas fa-link"></i>
+                                        <span>优质资源网站.txt</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-actions">
+                                <button class="action-btn"><i class="far fa-thumbs-up"></i> <span>14</span></button>
+                                <button class="action-btn"><i class="far fa-comment"></i> <span>8</span></button>
+                                <button class="action-btn"><i class="far fa-bookmark"></i> 收藏</button>
+                                <button class="action-btn share-btn"><i class="fas fa-share"></i> 分享</button>
+                            </div>
+                        </div>
+                        
+                        <div class="discussion-item" data-type="paper">
+                            <div class="item-header">
+                                <div class="user-info">
+                                    <img src="./images/person1.jpg" alt="用户" class="user-avatar">
+                                    <div class="user-details">
+                                        <span class="user-name">王虎</span>
+                                        <span class="post-time">1天前</span>
+                                    </div>
+                                </div>
+                                <div class="item-tags">
+                                    <span class="tag paper-tag">论文</span>
+                                    <!-- <span class="tag subtype-tag experience-tag">经验交流</span> -->
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <p>分享毕业论文从开题到答辩的全过程经验。重点介绍如何与导师有效沟通、文献综述的撰写技巧、数据处理方法以及答辩准备要点。</p>
+                                <div class="item-attachments">
+                                    <div class="attachment">
+                                        <i class="fas fa-file-pdf"></i>
+                                        <span>毕业论文时间规划.pdf</span>
+                                    </div>
+                                    <div class="attachment">
+                                        <i class="fas fa-file-powerpoint"></i>
+                                        <span>答辩PPT模板.pptx</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-actions">
+                                <button class="action-btn"><i class="far fa-thumbs-up"></i> <span>21</span></button>
+                                <button class="action-btn"><i class="far fa-comment"></i> <span>11</span></button>
+                                <button class="action-btn"><i class="far fa-bookmark"></i> 收藏</button>
+                                <button class="action-btn share-btn"><i class="fas fa-share"></i> 分享</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右侧边栏 -->
+            <div class="discussion-sidebar">
+                <!-- 热门标签 -->
+                <div class="sidebar-section fade-in-section">
+                    <h4><i class="fas fa-fire"></i> 热门标签</h4>
+                    <div class="popular-tags">
+                        <span class="popular-tag" data-tag="数学建模">数学建模</span>
+                        <span class="popular-tag" data-tag="挑战杯">挑战杯</span>
+                        <span class="popular-tag" data-tag="ACM">ACM</span>
+                        <span class="popular-tag" data-tag="软件著作权">软件著作权</span>
+                        <span class="popular-tag" data-tag="专利申请">专利申请</span>
+                        <span class="popular-tag" data-tag="论文写作">论文写作</span>
+                        <span class="popular-tag" data-tag="组队招募">组队招募</span>
+                        <span class="popular-tag" data-tag="经验分享">经验分享</span>
+                        <span class="popular-tag" data-tag="资源下载">资源下载</span>
+                        <span class="popular-tag" data-tag="答疑解惑">答疑解惑</span>
+                        <span class="popular-tag" data-tag="专利申请">专利申请</span>
+                        <span class="popular-tag" data-tag="发明专利">发明专利</span>
+                        <span class="popular-tag" data-tag="实用新型">实用新型</span>
+                        <span class="popular-tag" data-tag="SCI论文">SCI论文</span>
+                        <span class="popular-tag" data-tag="论文写作">论文写作</span>
+                        <span class="popular-tag" data-tag="毕业论文">毕业论文</span>
+                        <span class="popular-tag" data-tag="期刊投稿">期刊投稿</span>
+                    </div>
+                </div>
+
+                <!-- 活跃用户 -->
+                <div class="sidebar-section fade-in-section">
+                    <h4><i class="fas fa-users"></i> 活跃用户</h4>
+                    <div class="active-users">
+                        <div class="active-user">
+                            <img src="./images/person1.jpg" alt="用户" class="user-avatar small">
+                            <div class="user-info-sidebar">
+                                <span class="user-name">黄晓明</span>
+                                <span class="user-title">竞赛达人</span>
+                            </div>
+                            <span class="user-posts">12 篇</span>
+                        </div>
+                        <div class="active-user">
+                            <img src="./images/person2.jpg" alt="用户" class="user-avatar small">
+                            <div class="user-info-sidebar">
+                                <span class="user-name">李思妍</span>
+                                <span class="user-title">团队领袖</span>
+                            </div>
+                            <span class="user-posts">8 篇</span>
+                        </div>
+                        <div class="active-user">
+                            <img src="./images/person3.jpg" alt="用户" class="user-avatar small">
+                            <div class="user-info-sidebar">
+                                <span class="user-name">Kim</span>
+                                <span class="user-title">资源分享</span>
+                            </div>
+                            <span class="user-posts">15 篇</span>
+                        </div>
+                        <div class="active-user">
+                            <img src="./images/person1.jpg" alt="用户" class="user-avatar small">
+                            <div class="user-info-sidebar">
+                                <span class="user-name">John</span>
+                                <span class="user-title">技术专家</span>
+                            </div>
+                            <span class="user-posts">23 篇</span>
+                        </div>
+                        <div class="active-user">
+                            <img src="./images/person3.jpg" alt="用户" class="user-avatar small">
+                            <div class="user-info-sidebar">
+                                <span class="user-name">李勇</span>
+                                <span class="user-title">专利达人</span>
+                            </div>
+                            <span class="user-posts">9 篇</span>
+                        </div>
+                        <div class="active-user">
+                            <img src="./images/person2.jpg" alt="用户" class="user-avatar small">
+                            <div class="user-info-sidebar">
+                                <span class="user-name">黄杉</span>
+                                <span class="user-title">论文专家</span>
+                            </div>
+                            <span class="user-posts">7 篇</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 快速导航 -->
+                <div class="sidebar-section fade-in-section">
+                    <h4><i class="fas fa-rocket"></i> 快速导航</h4>
+                    <div class="quick-links">
+                        <a href="A.html" class="quick-link">
+                            <i class="fas fa-trophy"></i>
+                            <span>A级比赛</span>
+                        </a>
+                        <a href="B.html" class="quick-link">
+                            <i class="fas fa-medal"></i>
+                            <span>B级比赛</span>
+                        </a>
+                        <a href="C.html" class="quick-link">
+                            <i class="fas fa-award"></i>
+                            <span>C级比赛</span>
+                        </a>
+                        <a href="D.html" class="quick-link">
+                            <i class="fas fa-certificate"></i>
+                            <span>D级比赛</span>
+                        </a>
+                        <a href="Ruanzhu.html" class="quick-link">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>软著申请</span>
+                        </a>
+                        <a href="Zhuanli.html" class="quick-link">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>专利申报</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 平台规则 -->
+                <div class="sidebar-section fade-in-section">
+                    <h4><i class="fas fa-info-circle"></i> 平台规则</h4>
+                    <div class="platform-rules">
+                        <p><i class="fas fa-check-circle"></i> 请文明发言，尊重他人</p>
+                        <p><i class="fas fa-check-circle"></i> 禁止发布不当内容</p>
+                        <p><i class="fas fa-check-circle"></i> 选择合适的标签</p>
+                        <p><i class="fas fa-check-circle"></i> 鼓励分享有价值的内容</p>
+                        <p><i class="fas fa-check-circle"></i> 保护个人隐私信息</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>关于我们</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 学校简介</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 领导团队</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 组织机构</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 校园文化</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>招生信息</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 本科生招生</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 研究生招生</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 留学生招生</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 继续教育</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>校园生活</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 学生活动</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 社团组织</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 校园服务</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 住宿信息</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>联系我们</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> 河北省石家庄市裕华区裕翔街26号</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> 0311-81668111</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> webmaster@hebust.edu.cn</a></li>
+                        <li><a href="#"><i class="fas fa-globe"></i> www.hebust.edu.cn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 河北科技大学 版权所有 | 冀ICP备05002802号</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 标签选择交互
+        document.addEventListener('DOMContentLoaded', function() {
+            // 主标签选择
+            const tagButtons = document.querySelectorAll('.tag-btn');
+            const competitionSubtags = document.querySelectorAll('.competition-subtags');
+            const competitionFilter = document.getElementById('competition-filter');
+            
+            tagButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // 移除所有按钮的active类
+                    tagButtons.forEach(btn => btn.classList.remove('active'));
+                    // 为当前按钮添加active类
+                    this.classList.add('active');
+                    
+                    const selectedType = this.dataset.type;
+                    
+                    // 显示或隐藏比赛相关的子标签
+                    if (selectedType === 'competition') {
+                        competitionSubtags.forEach(element => {
+                            element.style.display = 'block';
+                        });
+                        competitionFilter.style.display = 'inline-block';
+                    } else {
+                        competitionSubtags.forEach(element => {
+                            element.style.display = 'none';
+                        });
+                        competitionFilter.style.display = 'none';
+                    }
+                });
+            });
+            
+            // 子标签选择
+            const subtagButtons = document.querySelectorAll('.subtag-btn');
+            subtagButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    subtagButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+            
+            // 文件上传预览
+            const fileUpload = document.getElementById('file-upload');
+            const fileInfo = document.querySelector('.file-info');
+            
+            fileUpload.addEventListener('change', function() {
+                if (this.files.length > 0) {
+                    const fileNames = Array.from(this.files).map(file => file.name).join(', ');
+                    fileInfo.textContent = `已选择: ${fileNames}`;
+                    fileInfo.style.color = 'var(--primary)';
+                    fileInfo.style.fontWeight = '600';
+                } else {
+                    fileInfo.textContent = '支持图片、文档和压缩包';
+                    fileInfo.style.color = 'var(--gray)';
+                    fileInfo.style.fontWeight = 'normal';
+                }
+            });
+            
+            // 筛选功能
+            const filterSelect = document.querySelector('.filter-select');
+            const subfilterSelect = document.querySelector('.subfilter-select');
+            const discussionItems = document.querySelectorAll('.discussion-item');
+            
+            function filterDiscussions() {
+                const filterValue = filterSelect.value;
+                const subfilterValue = subfilterSelect.value;
+                
+                discussionItems.forEach(item => {
+                    const itemType = item.dataset.type;
+                    const itemCompetition = item.dataset.competition;
+                    
+                    let shouldShow = true;
+                    
+                    // 主筛选
+                    if (filterValue !== 'all' && itemType !== filterValue) {
+                        shouldShow = false;
+                    }
+                    
+                    // 子筛选（比赛相关）
+                    if (filterValue === 'competition' && subfilterValue !== 'all' && itemCompetition !== subfilterValue) {
+                        shouldShow = false;
+                    }
+                    
+                    item.style.display = shouldShow ? 'block' : 'none';
+                    
+                    // 添加动画效果
+                    if (shouldShow) {
+                        item.style.animation = 'fadeIn 0.5s ease';
+                    }
+                });
+            }
+            
+            filterSelect.addEventListener('change', function() {
+                filterDiscussions();
+            });
+            
+            subfilterSelect.addEventListener('change', function() {
+                filterDiscussions();
+            });
+            
+            // 热门标签点击
+            const popularTags = document.querySelectorAll('.popular-tag');
+            popularTags.forEach(tag => {
+                tag.addEventListener('click', function() {
+                    const tagText = this.dataset.tag;
+                    const postTextarea = document.querySelector('.post-textarea');
+                    postTextarea.value = `#${tagText} ` + postTextarea.value;
+                    postTextarea.focus();
+                });
+            });
+            
+            // 发布功能
+            const submitBtn = document.querySelector('.submit-btn');
+            const postTextarea = document.querySelector('.post-textarea');
+            
+            submitBtn.addEventListener('click', function() {
+                const content = postTextarea.value.trim();
+                if (!content) {
+                    alert('请输入内容');
+                    return;
+                }
+                
+                const selectedTag = document.querySelector('.tag-btn.active').dataset.type;
+                let message = '发布成功！';
+                
+                if (selectedTag === 'competition') {
+                    const competition = document.querySelector('.competition-select').value;
+                    const subtype = document.querySelector('.subtag-btn.active').dataset.subtype;
+                    if (!competition) {
+                        alert('请选择具体比赛');
+                        return;
+                    }
+                    message += ` 标签：比赛-${getCompetitionName(competition)}-${getSubtypeName(subtype)}`;
+                } else {
+                    message += ` 标签：${getTagName(selectedTag)}`;
+                }
+                
+                alert(message);
+                postTextarea.value = '';
+                fileUpload.value = '';
+                fileInfo.textContent = '支持图片、文档和压缩包';
+                fileInfo.style.color = 'var(--gray)';
+                fileInfo.style.fontWeight = 'normal';
+            });
+            
+            // 点赞功能
+            const likeButtons = document.querySelectorAll('.action-btn');
+            likeButtons.forEach(button => {
+                if (button.querySelector('.fa-thumbs-up')) {
+                    button.addEventListener('click', function() {
+                        const countSpan = this.querySelector('span');
+                        let count = parseInt(countSpan.textContent);
+                        if (this.classList.contains('liked')) {
+                            count--;
+                            this.classList.remove('liked');
+                            this.style.color = '';
+                        } else {
+                            count++;
+                            this.classList.add('liked');
+                            this.style.color = 'var(--primary)';
+                        }
+                        countSpan.textContent = count;
+                    });
+                }
+            });
+            
+            // 辅助函数
+            function getCompetitionName(value) {
+                const select = document.querySelector('.competition-select');
+                return select.options[select.selectedIndex].text;
+            }
+            
+            function getSubtypeName(subtype) {
+                const names = {
+                    'qna': '答疑解惑',
+                    'team': '组队',
+                    'resource': '资源分享',
+                    'experience': '经验交流'
+                };
+                return names[subtype] || subtype;
+            }
+            
+            function getTagName(tag) {
+                const names = {
+                    'competition': '比赛',
+                    'soft': '软著',
+                    'patent': '专利',
+                    'paper': '论文'
+                };
+                return names[tag] || tag;
+            }
+            
+            // 初始化滚动动画
+            const fadeSections = document.querySelectorAll('.fade-in-section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+            
+            fadeSections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+    <script src="./js/myjj.js"></script>
+</body>
+</html>
